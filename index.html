@@ -12,71 +12,93 @@
 <body class="bg-gray-50 text-gray-800 font-sans">
 
     <!-- 상단 네비게이션 -->
-    <header class="bg-blue-600 text-white shadow-md sticky top-0 z-50">
-        <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
-            <div class="flex items-center space-x-2">
-                <i data-lucide="hard-drive" class="w-7 h-7"></i>
-                <span class="text-xl font-bold tracking-tight">FILEHUB</span>
+    <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <span class="bg-blue-600 text-white text-xs font-bold px-3 py-1.5 rounded tracking-wide">2026 RANK TOP</span>
+                <span class="text-sm font-semibold text-gray-700">콘텐츠 랭킹 사이트</span>
             </div>
 
             <!-- 데스크탑 메뉴 -->
-            <nav class="hidden md:flex space-x-6 text-sm font-medium">
-                <a href="#rank" class="hover:text-blue-200">웹하드순위</a>
-                <a href="#new" class="hover:text-blue-200">신규웹하드</a>
-                <a href="#p2p" class="hover:text-blue-200">P2P사이트순위</a>
-                <a href="#modules" class="hover:text-blue-200">핵심서비스</a>
-                <a href="#guide" class="hover:text-blue-200">이용가이드</a>
-                <a href="#coupon" class="hover:text-blue-200">혜택및쿠폰</a>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium text-gray-700">
+                <a href="#rank" class="hover:text-blue-600">무료웹하드순위</a>
+                <a href="#p2p" class="hover:text-blue-600">P2P사이트순위</a>
+                <a href="#new" class="hover:text-blue-600">신규웹하드</a>
+                <a href="#guide" class="hover:text-blue-600">이용가이드</a>
+                <a href="#coupon" class="hover:text-blue-600">혜택쿠폰</a>
             </nav>
 
             <!-- 햄버거 버튼 -->
-            <button id="menu-btn" class="md:hidden p-1.5 rounded-lg hover:bg-blue-700 focus:outline-none">
-                <i data-lucide="menu" class="w-6 h-6"></i>
+            <button id="menu-btn" class="md:hidden p-1.5 rounded-lg hover:bg-gray-100 focus:outline-none">
+                <i data-lucide="menu" class="w-6 h-6 text-gray-700"></i>
             </button>
         </div>
 
         <!-- 모바일 드롭다운 메뉴 -->
-        <div id="mobile-menu" class="hidden md:hidden bg-blue-700 border-t border-blue-500 px-4 py-3 space-y-2 text-sm font-medium">
-            <a href="#rank" class="block py-1.5 hover:text-blue-200">웹하드순위</a>
-            <a href="#new" class="block py-1.5 hover:text-blue-200">신규웹하드</a>
-            <a href="#p2p" class="block py-1.5 hover:text-blue-200">P2P사이트순위</a>
-            <a href="#modules" class="block py-1.5 hover:text-blue-200">핵심서비스</a>
-            <a href="#guide" class="block py-1.5 hover:text-blue-200">이용가이드</a>
-            <a href="#coupon" class="block py-1.5 hover:text-blue-200">혜택및쿠폰</a>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 px-4 py-3 space-y-2 text-sm font-medium text-gray-700 shadow-lg">
+            <a href="#rank" class="block py-1.5 hover:text-blue-600">무료웹하드순위</a>
+            <a href="#p2p" class="block py-1.5 hover:text-blue-600">P2P사이트순위</a>
+            <a href="#new" class="block py-1.5 hover:text-blue-600">신규웹하드</a>
+            <a href="#guide" class="block py-1.5 hover:text-blue-600">이용가이드</a>
+            <a href="#coupon" class="block py-1.5 hover:text-blue-600">혜택쿠폰</a>
         </div>
     </header>
 
-    <!-- 메인 대시보드 요약 배너 -->
-    <section class="bg-blue-700 text-white py-6">
+    <!-- 메인 블루 배경 배너 (간격 최적화) -->
+    <section class="bg-blue-600 text-white py-10 md:py-12">
         <div class="max-w-6xl mx-auto px-4">
-            <div class="bg-blue-800/60 rounded-xl p-5 border border-blue-500/30 flex flex-col md:flex-row justify-between items-center gap-4">
-                <div class="flex items-center space-x-3">
-                    <div class="p-3 bg-blue-600 rounded-lg">
-                        <i data-lucide="award" class="w-8 h-8 text-white"></i>
-                    </div>
-                    <div>
-                        <span class="text-xs bg-blue-500 px-2 py-0.5 rounded text-blue-100 font-semibold">실시간 집계</span>
-                        <h2 class="text-lg font-bold mt-1">대한민국 웹하드 · 정책순위</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+                
+                <!-- 좌측 등록사이트 및 방문자 카드 (시안 비율에 맞게 패딩 및 간격 좁힘) -->
+                <div class="lg:col-span-7 bg-white text-gray-800 rounded-2xl shadow-md p-6 border border-gray-100">
+                    <div class="grid grid-cols-2 sm:grid-cols-4 divide-y sm:divide-y-0 sm:divide-x divide-gray-100 text-center gap-y-4 sm:gap-y-0">
+                        <div class="flex flex-col items-center justify-center space-y-1">
+                            <i data-lucide="server" class="w-4 h-4 text-blue-600 mb-0.5"></i>
+                            <span class="text-xs text-gray-500 font-medium">등록사이트</span>
+                            <span class="text-2xl font-bold text-gray-900 tracking-tight">15</span>
+                        </div>
+                        <div class="flex flex-col items-center justify-center space-y-1">
+                            <i data-lucide="users" class="w-4 h-4 text-blue-600 mb-0.5"></i>
+                            <span class="text-xs text-gray-500 font-medium">일방문자</span>
+                            <span class="text-2xl font-bold text-gray-900 tracking-tight">420</span>
+                        </div>
+                        <div class="flex flex-col items-center justify-center space-y-1">
+                            <i data-lucide="user-check" class="w-4 h-4 text-blue-600 mb-0.5"></i>
+                            <span class="text-xs text-gray-500 font-medium">어제방문자</span>
+                            <span class="text-2xl font-bold text-gray-900 tracking-tight">380</span>
+                        </div>
+                        <div class="flex flex-col items-center justify-center space-y-1">
+                            <i data-lucide="trending-up" class="w-4 h-4 text-blue-600 mb-0.5"></i>
+                            <span class="text-xs text-gray-500 font-medium">총 누적 방문자</span>
+                            <span class="text-2xl font-bold text-gray-900 tracking-tight">9,250</span>
+                        </div>
                     </div>
                 </div>
-                <div class="grid grid-cols-4 gap-4 text-center bg-blue-900/40 p-3 rounded-lg border border-blue-600/40 w-full md:w-auto">
+
+                <!-- 우측 타이틀 및 서브 정보 -->
+                <div class="lg:col-span-5 space-y-3">
                     <div>
-                        <p class="text-[11px] text-blue-300">등록 업체</p>
-                        <p class="font-bold text-sm md:text-base">15</p>
+                        <p class="text-xs text-blue-200 font-medium">2026년10월</p>
+                        <h1 class="text-2xl md:text-3xl font-extrabold tracking-tight mt-0.5">P2P사이트 · 웹하드순위</h1>
+                        <p class="text-xs text-blue-100 mt-1">19개 사이트의 오픈일·가입 혜택·이벤트 조건을 같은 기준으로 비교합니다.</p>
                     </div>
-                    <div>
-                        <p class="text-[11px] text-blue-300">제휴 쿠폰</p>
-                        <p class="font-bold text-sm md:text-base">120</p>
-                    </div>
-                    <div>
-                        <p class="text-[11px] text-blue-300">누적방문</p>
-                        <p class="font-bold text-sm md:text-base">115만</p>
-                    </div>
-                    <div>
-                        <p class="text-[11px] text-blue-300">실시간평점</p>
-                        <p class="font-bold text-sm md:text-base text-yellow-400">9.75점</p>
+                    
+                    <div class="grid grid-cols-3 pt-2 border-t border-blue-500/50 text-xs gap-2">
+                        <div>
+                            <p class="text-blue-200">정보확인일</p>
+                            <p class="font-bold mt-0.5">206년 9월</p>
+                        </div>
+                        <div>
+                            <p class="text-blue-200">혜택조건</p>
+                            <p class="font-bold mt-0.5">가입 시 충전포인트</p>
+                        </div>
+                        <div>
+                            <p class="text-blue-200">동일기준비교</p>
+                            <p class="font-bold mt-0.5">신규콘텐츠</p>
+                        </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -84,80 +106,45 @@
     <!-- 본문 컨테이너 -->
     <main class="max-w-6xl mx-auto px-4 py-8 space-y-8">
 
-        <!-- 검색 바 -->
-        <div class="bg-white p-4 rounded-xl shadow-sm border border-gray-200 flex flex-col md:flex-row items-center justify-between gap-4">
-            <div class="flex items-center space-x-2 w-full md:w-auto flex-1">
-                <i data-lucide="search" class="w-5 h-5 text-gray-400"></i>
-                <input type="text" placeholder="원하시는 웹하드 또는 P2P 사이트를 검색하세요..." class="w-full text-sm outline-none bg-transparent">
-            </div>
-            <div class="flex items-center space-x-2 text-xs font-medium">
-                <span class="text-gray-500">인기태그:</span>
-                <span class="bg-blue-50 text-blue-600 px-2.5 py-1 rounded-full border border-blue-100">#무료쿠폰</span>
-                <span class="bg-blue-50 text-blue-600 px-2.5 py-1 rounded-full border border-blue-100">#신규웹하드</span>
-                <span class="bg-blue-50 text-blue-600 px-2.5 py-1 rounded-full border border-blue-100">#속도빠른곳</span>
-            </div>
-        </div>
-
-        <!-- 공지사항 -->
-        <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6 space-y-4">
-            <div class="flex items-center justify-between border-b pb-3">
-                <div class="flex items-center space-x-2 text-blue-600 font-bold">
-                    <i data-lucide="info" class="w-5 h-5"></i>
-                    <span>공지사항 및 사이트 이용 안내</span>
-                </div>
-                <span class="text-xs text-gray-400">2026.09.22</span>
-            </div>
-            <p class="text-sm text-gray-600 leading-relaxed">
-                본 순위표는 사용자 이용 후기, 다운로드 속도, 제휴 콘텐츠 보유량 및 안전성을 바탕으로 실시간 집계됩니다. 안전하고 유익한 웹하드 이용을 위해 각 사이트의 쿠폰 및 혜택을 확인해 보세요.
-            </p>
-        </div>
-
-        <!-- 1. 웹하드순위 (비교 표 형식 - 모바일 반응형 최적화 적용) -->
-        <div id="rank" class="bg-white rounded-xl shadow-sm border border-gray-200 p-6 space-y-6">
-            <div class="flex items-center justify-between border-b pb-4">
-                <div class="flex items-center space-x-2 text-gray-900 font-bold text-lg">
-                    <i data-lucide="trophy" class="w-6 h-6 text-blue-600"></i>
-                    <span>웹하드 순위 비교 표</span>
-                </div>
-                <span class="text-xs text-blue-600 font-semibold bg-blue-50 px-2.5 py-1 rounded">TOP RANK TABLE</span>
-            </div>
-
-            <!-- 모바일 전용 카드형 뷰 (모바일 화면에서만 표시, PC에서는 숨김) -->
+        <!-- 1. 웹하드순위 (시안 스타일 적용 및 모바일 반응형 최적화) -->
+        <div id="rank" class="bg-white rounded-2xl shadow-sm border border-gray-200 p-6 space-y-6">
+            
+            <!-- 모바일 전용 카드형 뷰 (모바일 화면에서만 표시) -->
             <div class="md:hidden space-y-3">
-                <div class="p-4 rounded-lg border border-gray-200 bg-gray-50 space-y-2">
+                <div class="p-4 rounded-xl border border-gray-100 bg-gray-50/50 space-y-2">
                     <div class="flex justify-between items-center">
                         <span class="font-bold text-blue-600 text-sm">1위. 파일노리</span>
-                        <span class="text-yellow-500 font-bold text-xs">⭐ 9.9점</span>
+                        <span class="text-yellow-500 font-bold text-xs">9.9점</span>
                     </div>
                     <p class="text-xs text-gray-600">최대 용량 및 초고속 전송 지원</p>
                     <div class="text-right pt-1">
                         <a href="#coupon" class="text-xs bg-blue-600 text-white px-3 py-1 rounded font-semibold">쿠폰받기</a>
                     </div>
                 </div>
-                <div class="p-4 rounded-lg border border-gray-200 bg-gray-50 space-y-2">
+                <div class="p-4 rounded-xl border border-gray-100 bg-gray-50/50 space-y-2">
                     <div class="flex justify-between items-center">
                         <span class="font-bold text-blue-600 text-sm">2위. 파일디스크</span>
-                        <span class="text-yellow-500 font-bold text-xs">⭐ 9.7점</span>
+                        <span class="text-yellow-500 font-bold text-xs">9.7점</span>
                     </div>
                     <p class="text-xs text-gray-600">다양한 최신 콘텐츠 보유 및 안정성</p>
                     <div class="text-right pt-1">
                         <a href="#coupon" class="text-xs bg-blue-600 text-white px-3 py-1 rounded font-semibold">쿠폰받기</a>
                     </div>
                 </div>
-                <div class="p-4 rounded-lg border border-gray-200 bg-gray-50 space-y-2">
+                <div class="p-4 rounded-xl border border-gray-100 bg-gray-50/50 space-y-2">
                     <div class="flex justify-between items-center">
                         <span class="font-bold text-blue-600 text-sm">3위. 파일썬</span>
-                        <span class="text-yellow-500 font-bold text-xs">⭐ 9.5점</span>
+                        <span class="text-yellow-500 font-bold text-xs">9.5점</span>
                     </div>
                     <p class="text-xs text-gray-600">안정적인 다운로드 시스템과 가벼운 구동</p>
                     <div class="text-right pt-1">
                         <a href="#coupon" class="text-xs bg-blue-600 text-white px-3 py-1 rounded font-semibold">쿠폰받기</a>
                     </div>
                 </div>
-                <div class="p-4 rounded-lg border border-gray-200 bg-gray-50 space-y-2">
+                <div class="p-4 rounded-xl border border-gray-100 bg-gray-50/50 space-y-2">
                     <div class="flex justify-between items-center">
                         <span class="font-bold text-blue-600 text-sm">4위. 투투디스크</span>
-                        <span class="text-yellow-500 font-bold text-xs">⭐ 9.2점</span>
+                        <span class="text-yellow-500 font-bold text-xs">9.2점</span>
                     </div>
                     <p class="text-xs text-gray-600">모바일 완벽 연동 및 멀티 플랫폼 지원</p>
                     <div class="text-right pt-1">
@@ -166,63 +153,117 @@
                 </div>
             </div>
 
-            <!-- PC 전용 테이블 뷰 (모바일에서는 숨김, PC 화면에서는 기존 표 그대로 유지) -->
+            <!-- PC 전용 테이블 뷰 (시안과 일치하는 구조) -->
             <div class="hidden md:block overflow-x-auto">
                 <table class="w-full text-left text-sm text-gray-600">
-                    <thead class="bg-gray-50 text-gray-700 uppercase text-xs">
+                    <thead class="text-gray-600 border-b border-gray-100 text-xs">
                         <tr>
-                            <th class="py-3 px-4 rounded-l-lg">순위</th>
-                            <th class="py-3 px-4">웹하드 명칭</th>
-                            <th class="py-3 px-4">핵심 특징</th>
-                            <th class="py-3 px-4">평점</th>
-                            <th class="py-3 px-4 rounded-r-lg">쿠폰받기</th>
+                            <th class="py-3 px-4 font-semibold">순위</th>
+                            <th class="py-3 px-4 font-semibold">웹하드 명칭</th>
+                            <th class="py-3 px-4 font-semibold">핵심 특징</th>
+                            <th class="py-3 px-4 font-semibold text-center">평점</th>
+                            <th class="py-3 px-4 font-semibold text-right">쿠폰받기</th>
                         </tr>
                     </thead>
                     <tbody class="divide-y divide-gray-100 text-xs">
                         <tr>
-                            <td class="py-3 px-4 font-bold text-blue-600">1위</td>
-                            <td class="py-3 px-4 font-medium text-gray-800">파일노리</td>
-                            <td class="py-3 px-4">최대 용량 및 초고속 전송 지원</td>
-                            <td class="py-3 px-4 text-yellow-500 font-bold">9.9점</td>
-                            <td class="py-3 px-4"><a href="#coupon" class="text-blue-600 font-semibold hover:underline">쿠폰받기</a></td>
+                            <td class="py-4 px-4 font-bold text-blue-600">1위</td>
+                            <td class="py-4 px-4 font-medium text-gray-800">파일노리</td>
+                            <td class="py-4 px-4 text-gray-600">최대 용량 및 초고속 전송 지원</td>
+                            <td class="py-4 px-4 text-yellow-500 font-bold text-center">9.9점</td>
+                            <td class="py-4 px-4 text-right"><a href="#coupon" class="text-blue-600 font-semibold hover:underline">쿠폰받기</a></td>
                         </tr>
                         <tr>
-                            <td class="py-3 px-4 font-bold text-blue-600">2위</td>
-                            <td class="py-3 px-4 font-medium text-gray-800">파일디스크</td>
-                            <td class="py-3 px-4">다양한 최신 콘텐츠 보유 및 안정성</td>
-                            <td class="py-3 px-4 text-yellow-500 font-bold">9.7점</td>
-                            <td class="py-3 px-4"><a href="#coupon" class="text-blue-600 font-semibold hover:underline">쿠폰받기</a></td>
+                            <td class="py-4 px-4 font-bold text-blue-600">2위</td>
+                            <td class="py-4 px-4 font-medium text-gray-800">파일디스크</td>
+                            <td class="py-4 px-4 text-gray-600">다양한 최신 콘텐츠 보유 및 안정성</td>
+                            <td class="py-4 px-4 text-yellow-500 font-bold text-center">9.7점</td>
+                            <td class="py-4 px-4 text-right"><a href="#coupon" class="text-blue-600 font-semibold hover:underline">쿠폰받기</a></td>
                         </tr>
                         <tr>
-                            <td class="py-3 px-4 font-bold text-blue-600">3위</td>
-                            <td class="py-3 px-4 font-medium text-gray-800">파일썬</td>
-                            <td class="py-3 px-4">안정적인 다운로드 시스템과 가벼운 구동</td>
-                            <td class="py-3 px-4 text-yellow-500 font-bold">9.5점</td>
-                            <td class="py-3 px-4"><a href="#coupon" class="text-blue-600 font-semibold hover:underline">쿠폰받기</a></td>
+                            <td class="py-4 px-4 font-bold text-blue-600">3위</td>
+                            <td class="py-4 px-4 font-medium text-gray-800">파일썬</td>
+                            <td class="py-4 px-4 text-gray-600">안정적인 다운로드 시스템과 가벼운 구동</td>
+                            <td class="py-4 px-4 text-yellow-500 font-bold text-center">9.5점</td>
+                            <td class="py-4 px-4 text-right"><a href="#coupon" class="text-blue-600 font-semibold hover:underline">쿠폰받기</a></td>
                         </tr>
                         <tr>
-                            <td class="py-3 px-4 font-bold text-blue-600">4위</td>
-                            <td class="py-3 px-4 font-medium text-gray-800">투투디스크</td>
-                            <td class="py-3 px-4">모바일 완벽 연동 및 멀티 플랫폼 지원</td>
-                            <td class="py-3 px-4 text-yellow-500 font-bold">9.2점</td>
-                            <td class="py-3 px-4"><a href="#coupon" class="text-blue-600 font-semibold hover:underline">쿠폰받기</a></td>
+                            <td class="py-4 px-4 font-bold text-blue-600">4위</td>
+                            <td class="py-4 px-4 font-medium text-gray-800">투투디스크</td>
+                            <td class="py-4 px-4 text-gray-600">모바일 완벽 연동 및 멀티 플랫폼 지원</td>
+                            <td class="py-4 px-4 text-yellow-500 font-bold text-center">9.2점</td>
+                            <td class="py-4 px-4 text-right"><a href="#coupon" class="text-blue-600 font-semibold hover:underline">쿠폰받기</a></td>
                         </tr>
                     </tbody>
                 </table>
             </div>
         </div>
 
-        <!-- 2. 신규웹하드 -->
-        <div id="new" class="bg-white rounded-xl shadow-sm border border-gray-200 p-6 space-y-4">
+        <!-- 2. P2P사이트순위 -->
+        <div id="p2p" class="bg-white rounded-2xl shadow-sm border border-gray-200 p-6 space-y-6">
             <div class="flex items-center justify-between border-b pb-4">
-                <div class="flex items-center space-x-2 text-gray-900 font-bold text-lg">
-                    <i data-lucide="sparkles" class="w-6 h-6 text-blue-600"></i>
+                <div class="flex items-center space-x-2 text-gray-900 font-bold text-base">
+                    <i data-lucide="share-2" class="w-5 h-5 text-blue-600"></i>
+                    <span>P2P사이트순위 통합 비교</span>
+                </div>
+                <span class="text-xs text-gray-500">실시간 순위</span>
+            </div>
+            <div class="overflow-x-auto">
+                <table class="w-full text-left text-sm text-gray-600">
+                    <thead class="text-gray-600 border-b border-gray-100 text-xs">
+                        <tr>
+                            <th class="py-3 px-4 font-semibold">순위</th>
+                            <th class="py-3 px-4 font-semibold">사이트명</th>
+                            <th class="py-3 px-4 font-semibold">특징 및 장점</th>
+                            <th class="py-3 px-4 font-semibold text-center">만족도</th>
+                            <th class="py-3 px-4 font-semibold text-right">바로가기</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-100 text-xs">
+                        <tr>
+                            <td class="py-4 px-4 font-bold text-blue-600">1위</td>
+                            <td class="py-4 px-4 font-medium text-gray-800">큐디스크</td>
+                            <td class="py-4 px-4 text-gray-600">대용량 자료 전송 최적화 및 안정성 우수</td>
+                            <td class="py-4 px-4 text-yellow-500 font-bold text-center">9.8점</td>
+                            <td class="py-4 px-4 text-right"><a href="#" class="text-blue-600 font-semibold hover:underline">사이트 방문</a></td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-4 font-bold text-blue-600">2위</td>
+                            <td class="py-4 px-4 font-medium text-gray-800">이지파일</td>
+                            <td class="py-4 px-4 text-gray-600">편리한 검색 엔진과 신속한 콘텐츠 업데이트</td>
+                            <td class="py-4 px-4 text-yellow-500 font-bold text-center">9.5점</td>
+                            <td class="py-4 px-4 text-right"><a href="#" class="text-blue-600 font-semibold hover:underline">사이트 방문</a></td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-4 font-bold text-blue-600">3위</td>
+                            <td class="py-4 px-4 font-medium text-gray-800">파일마켓</td>
+                            <td class="py-4 px-4 text-gray-600">오픈형 마켓 플레이스 연동 구조</td>
+                            <td class="py-4 px-4 text-yellow-500 font-bold text-center">9.3점</td>
+                            <td class="py-4 px-4 text-right"><a href="#" class="text-blue-600 font-semibold hover:underline">사이트 방문</a></td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 px-4 font-bold text-blue-600">4위</td>
+                            <td class="py-4 px-4 font-medium text-gray-800">케이디스크</td>
+                            <td class="py-4 px-4 text-gray-600">서버 다운타임 최소화 및 광대역 스트리밍</td>
+                            <td class="py-4 px-4 text-yellow-500 font-bold text-center">9.0점</td>
+                            <td class="py-4 px-4 text-right"><a href="#" class="text-blue-600 font-semibold hover:underline">사이트 방문</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- 3. 신규웹하드 -->
+        <div id="new" class="bg-white rounded-2xl shadow-sm border border-gray-200 p-6 space-y-4">
+            <div class="flex items-center justify-between border-b pb-4">
+                <div class="flex items-center space-x-2 text-gray-900 font-bold text-base">
+                    <i data-lucide="sparkles" class="w-5 h-5 text-blue-600"></i>
                     <span>신규웹하드 오픈 소식</span>
                 </div>
                 <span class="text-xs text-blue-600 font-semibold bg-blue-50 px-2.5 py-1 rounded">NEW OPEN</span>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div class="p-4 rounded-lg border border-gray-200 bg-gray-50 flex justify-between items-center">
+                <div class="p-4 rounded-xl border border-gray-200 bg-gray-50/50 flex justify-between items-center">
                     <div class="space-y-1">
                         <span class="bg-green-500 text-white text-[10px] font-bold px-2 py-0.5 rounded">신규런칭</span>
                         <h4 class="font-bold text-gray-800 text-sm">넥스트파일</h4>
@@ -230,7 +271,7 @@
                     </div>
                     <button class="bg-blue-600 text-white text-xs font-semibold px-3.5 py-2 rounded-lg hover:bg-blue-700">이벤트 참여</button>
                 </div>
-                <div class="p-4 rounded-lg border border-gray-200 bg-gray-50 flex justify-between items-center">
+                <div class="p-4 rounded-xl border border-gray-200 bg-gray-50/50 flex justify-between items-center">
                     <div class="space-y-1">
                         <span class="bg-green-500 text-white text-[10px] font-bold px-2 py-0.5 rounded">신규런칭</span>
                         <h4 class="font-bold text-gray-800 text-sm">클라우드디스크</h4>
@@ -241,85 +282,31 @@
             </div>
         </div>
 
-        <!-- 3. P2P사이트순위 -->
-        <div id="p2p" class="bg-white rounded-xl shadow-sm border border-gray-200 p-6 space-y-6">
-            <div class="flex items-center justify-between border-b pb-4">
-                <div class="flex items-center space-x-2 text-gray-900 font-bold text-lg">
-                    <i data-lucide="share-2" class="w-6 h-6 text-blue-600"></i>
-                    <span>P2P사이트순위 통합 비교</span>
-                </div>
-                <span class="text-xs text-gray-500">실시간 순위</span>
-            </div>
-            <div class="overflow-x-auto">
-                <table class="w-full text-left text-sm text-gray-600">
-                    <thead class="bg-gray-50 text-gray-700 uppercase text-xs">
-                        <tr>
-                            <th class="py-3 px-4 rounded-l-lg">순위</th>
-                            <th class="py-3 px-4">사이트명</th>
-                            <th class="py-3 px-4">특징 및 장점</th>
-                            <th class="py-3 px-4">만족도</th>
-                            <th class="py-3 px-4 rounded-r-lg">바로가기</th>
-                        </tr>
-                    </thead>
-                    <tbody class="divide-y divide-gray-100 text-xs">
-                        <tr>
-                            <td class="py-3 px-4 font-bold text-blue-600">1위</td>
-                            <td class="py-3 px-4 font-medium text-gray-800">큐디스크</td>
-                            <td class="py-3 px-4">대용량 자료 전송 최적화 및 안정성 우수</td>
-                            <td class="py-3 px-4 text-yellow-500 font-bold">9.8점</td>
-                            <td class="py-3 px-4"><a href="#" class="text-blue-600 font-semibold hover:underline">사이트 방문</a></td>
-                        </tr>
-                        <tr>
-                            <td class="py-3 px-4 font-bold text-blue-600">2위</td>
-                            <td class="py-3 px-4 font-medium text-gray-800">이지파일</td>
-                            <td class="py-3 px-4">편리한 검색 엔진과 신속한 콘텐츠 업데이트</td>
-                            <td class="py-3 px-4 text-yellow-500 font-bold">9.5점</td>
-                            <td class="py-3 px-4"><a href="#" class="text-blue-600 font-semibold hover:underline">사이트 방문</a></td>
-                        </tr>
-                        <tr>
-                            <td class="py-3 px-4 font-bold text-blue-600">3위</td>
-                            <td class="py-3 px-4 font-medium text-gray-800">파일마켓</td>
-                            <td class="py-3 px-4">오픈형 마켓 플레이스 연동 구조</td>
-                            <td class="py-3 px-4 text-yellow-500 font-bold">9.3점</td>
-                            <td class="py-3 px-4"><a href="#" class="text-blue-600 font-semibold hover:underline">사이트 방문</a></td>
-                        </tr>
-                        <tr>
-                            <td class="py-3 px-4 font-bold text-blue-600">4위</td>
-                            <td class="py-3 px-4 font-medium text-gray-800">케이디스크</td>
-                            <td class="py-3 px-4">서버 다운타임 최소화 및 광대역 스트리밍</td>
-                            <td class="py-3 px-4 text-yellow-500 font-bold">9.0점</td>
-                            <td class="py-3 px-4"><a href="#" class="text-blue-600 font-semibold hover:underline">사이트 방문</a></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-
         <!-- 4. 핵심서비스 모듈 및 기능안내 -->
-        <div id="modules" class="bg-white rounded-xl shadow-sm border border-gray-200 p-6 space-y-6">
+        <div id="modules" class="bg-white rounded-2xl shadow-sm border border-gray-200 p-6 space-y-6">
             <div class="flex items-center justify-between border-b pb-4">
-                <div class="flex items-center space-x-2 text-gray-900 font-bold text-lg">
-                    <i data-lucide="layers" class="w-6 h-6 text-blue-600"></i>
+                <div class="flex items-center space-x-2 text-gray-900 font-bold text-base">
+                    <i data-lucide="layers" class="w-5 h-5 text-blue-600"></i>
                     <span>핵심서비스 모듈 및 기능안내</span>
                 </div>
                 <span class="text-xs text-blue-600 font-semibold bg-blue-50 px-2.5 py-1 rounded">MODULES</span>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <div class="p-4 rounded-lg border border-gray-200 bg-gray-50/50 space-y-2">
+                <div class="p-4 rounded-xl border border-gray-200 bg-gray-50/50 space-y-2">
                     <div class="p-2.5 bg-blue-100 text-blue-600 rounded-lg w-fit">
                         <i data-lucide="hard-drive" class="w-5 h-5"></i>
                     </div>
                     <h3 class="font-bold text-gray-800 text-sm">대용량 클라우드 스토리지</h3>
                     <p class="text-xs text-gray-600 leading-relaxed">끊김 없는 초고속 업로드/다운로드 및 실시간 백업 기능을 제공하는 클라우드 공간입니다.</p>
                 </div>
-                <div class="p-4 rounded-lg border border-gray-200 bg-gray-50/50 space-y-2">
+                <div class="p-4 rounded-xl border border-gray-200 bg-gray-50/50 space-y-2">
                     <div class="p-2.5 bg-blue-100 text-blue-600 rounded-lg w-fit">
                         <i data-lucide="share-2" class="w-5 h-5"></i>
                     </div>
                     <h3 class="font-bold text-gray-800 text-sm">스마트 파일 공유 및 권한</h3>
                     <p class="text-xs text-gray-600 leading-relaxed">링크 공유 시 비밀번호 설정, 만료일 지정 및 세부 접근 권한 제어가 가능합니다.</p>
                 </div>
-                <div class="p-4 rounded-lg border border-gray-200 bg-gray-50/50 space-y-2">
+                <div class="p-4 rounded-xl border border-gray-200 bg-gray-50/50 space-y-2">
                     <div class="p-2.5 bg-blue-100 text-blue-600 rounded-lg w-fit">
                         <i data-lucide="shield" class="w-5 h-5"></i>
                     </div>
@@ -330,48 +317,48 @@
         </div>
 
         <!-- 5. 세부기능 설명 표 -->
-        <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6 space-y-6">
+        <div class="bg-white rounded-2xl shadow-sm border border-gray-200 p-6 space-y-6">
             <div class="flex items-center justify-between border-b pb-4">
-                <div class="flex items-center space-x-2 text-gray-900 font-bold text-lg">
-                    <i data-lucide="table" class="w-6 h-6 text-blue-600"></i>
+                <div class="flex items-center space-x-2 text-gray-900 font-bold text-base">
+                    <i data-lucide="table" class="w-5 h-5 text-blue-600"></i>
                     <span>세부기능 설명 표</span>
                 </div>
                 <span class="text-xs text-gray-500">상세 스펙</span>
             </div>
             <div class="overflow-x-auto">
                 <table class="w-full text-left text-sm text-gray-600">
-                    <thead class="bg-gray-50 text-gray-700 uppercase text-xs">
+                    <thead class="text-gray-600 border-b border-gray-100 text-xs">
                         <tr>
-                            <th class="py-3 px-4 rounded-l-lg">구분</th>
-                            <th class="py-3 px-4">기능명</th>
-                            <th class="py-3 px-4">상세 설명</th>
-                            <th class="py-3 px-4 rounded-r-lg">지원 환경</th>
+                            <th class="py-3 px-4 font-semibold">구분</th>
+                            <th class="py-3 px-4 font-semibold">기능명</th>
+                            <th class="py-3 px-4 font-semibold">상세 설명</th>
+                            <th class="py-3 px-4 font-semibold text-right">지원 환경</th>
                         </tr>
                     </thead>
                     <tbody class="divide-y divide-gray-100 text-xs">
                         <tr>
                             <td class="py-3 px-4 font-bold text-blue-600">전송</td>
                             <td class="py-3 px-4 font-medium text-gray-800">이어받기/이어쓰기</td>
-                            <td class="py-3 px-4">네트워크 단절 시 중단된 지점부터 다시 전송 재개</td>
-                            <td class="py-3 px-4">WEB / APP</td>
+                            <td class="py-3 px-4 text-gray-600">네트워크 단절 시 중단된 지점부터 다시 전송 재개</td>
+                            <td class="py-3 px-4 text-right">WEB / APP</td>
                         </tr>
                         <tr>
                             <td class="py-3 px-4 font-bold text-blue-600">보안</td>
                             <td class="py-3 px-4 font-medium text-gray-800">2단계 인증 (2FA)</td>
-                            <td class="py-3 px-4">로그인 시 OTP 및 추가 본인 확인 절차 적용</td>
-                            <td class="py-3 px-4">전체 환경</td>
+                            <td class="py-3 px-4 text-gray-600">로그인 시 OTP 및 추가 본인 확인 절차 적용</td>
+                            <td class="py-3 px-4 text-right">전체 환경</td>
                         </tr>
                         <tr>
                             <td class="py-3 px-4 font-bold text-blue-600">관리</td>
                             <td class="py-3 px-4 font-medium text-gray-800">휴지통 자동 비우기</td>
-                            <td class="py-3 px-4">삭제된 파일 30일 보관 후 영구 삭제 처리</td>
-                            <td class="py-3 px-4">클라우드 스토리지</td>
+                            <td class="py-3 px-4 text-gray-600">삭제된 파일 30일 보관 후 영구 삭제 처리</td>
+                            <td class="py-3 px-4 text-right">클라우드 스토리지</td>
                         </tr>
                         <tr>
                             <td class="py-3 px-4 font-bold text-blue-600">미디어</td>
                             <td class="py-3 px-4 font-medium text-gray-800">실시간 스트리밍 재생</td>
-                            <td class="py-3 px-4">대용량 영상 파일 다운로드 없이 즉시 웹 재생</td>
-                            <td class="py-3 px-4">PC / Mobile</td>
+                            <td class="py-3 px-4 text-gray-600">대용량 영상 파일 다운로드 없이 즉시 웹 재생</td>
+                            <td class="py-3 px-4 text-right">PC / Mobile</td>
                         </tr>
                     </tbody>
                 </table>
@@ -379,39 +366,39 @@
         </div>
 
         <!-- 6. 도입절차 필수서류 -->
-        <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6 space-y-6">
+        <div class="bg-white rounded-2xl shadow-sm border border-gray-200 p-6 space-y-6">
             <div class="flex items-center justify-between border-b pb-4">
-                <div class="flex items-center space-x-2 text-gray-900 font-bold text-lg">
-                    <i data-lucide="file-text" class="w-6 h-6 text-blue-600"></i>
+                <div class="flex items-center space-x-2 text-gray-900 font-bold text-base">
+                    <i data-lucide="file-text" class="w-5 h-5 text-blue-600"></i>
                     <span>도입절차 및 필수서류 안내</span>
                 </div>
                 <span class="text-xs text-blue-600 font-semibold bg-blue-50 px-2.5 py-1 rounded">GUIDE</span>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-4 gap-4 text-center">
-                <div class="p-4 rounded-lg border border-gray-200 bg-gray-50 space-y-2">
+                <div class="p-4 rounded-xl border border-gray-200 bg-gray-50 space-y-2">
                     <div class="w-8 h-8 bg-blue-600 text-white font-bold rounded-full flex items-center justify-center mx-auto text-sm">1</div>
                     <h4 class="font-bold text-gray-800 text-sm">신청서 접수</h4>
                     <p class="text-xs text-gray-500">온라인 도입 문의 및 상담 신청</p>
                 </div>
-                <div class="p-4 rounded-lg border border-gray-200 bg-gray-50 space-y-2">
+                <div class="p-4 rounded-xl border border-gray-200 bg-gray-50 space-y-2">
                     <div class="w-8 h-8 bg-blue-600 text-white font-bold rounded-full flex items-center justify-center mx-auto text-sm">2</div>
                     <h4 class="font-bold text-gray-800 text-sm">서류 검토</h4>
                     <p class="text-xs text-gray-500">제출 필수 서류 및 자격 심사</p>
                 </div>
-                <div class="p-4 rounded-lg border border-gray-200 bg-gray-50 space-y-2">
+                <div class="p-4 rounded-xl border border-gray-200 bg-gray-50 space-y-2">
                     <div class="w-8 h-8 bg-blue-600 text-white font-bold rounded-full flex items-center justify-center mx-auto text-sm">3</div>
                     <h4 class="font-bold text-gray-800 text-sm">계약 및 세팅</h4>
                     <p class="text-xs text-gray-500">서비스 플랜 계약 및 계정 생성</p>
                 </div>
-                <div class="p-4 rounded-lg border border-gray-200 bg-gray-50 space-y-2">
+                <div class="p-4 rounded-xl border border-gray-200 bg-gray-50 space-y-2">
                     <div class="w-8 h-8 bg-blue-600 text-white font-bold rounded-full flex items-center justify-center mx-auto text-sm">4</div>
                     <h4 class="font-bold text-gray-800 text-sm">서비스 이용</h4>
                     <p class="text-xs text-gray-500">스토리지 및 인프라 본격 운영</p>
                 </div>
             </div>
 
-            <div class="bg-blue-50/70 border border-blue-200 rounded-lg p-4 space-y-2">
+            <div class="bg-blue-50/70 border border-blue-200 rounded-xl p-4 space-y-2">
                 <h4 class="text-xs font-bold text-blue-900 flex items-center space-x-1.5">
                     <i data-lucide="check-circle-2" class="w-4 h-4 text-blue-600"></i>
                     <span>도입 시 필수 제출 서류 목록</span>
@@ -425,72 +412,72 @@
         </div>
 
         <!-- 7. 이용가이드 -->
-        <div id="guide" class="bg-white rounded-xl shadow-sm border border-gray-200 p-6 space-y-4">
+        <div id="guide" class="bg-white rounded-2xl shadow-sm border border-gray-200 p-6 space-y-4">
             <div class="flex items-center justify-between border-b pb-4">
-                <div class="flex items-center space-x-2 text-gray-900 font-bold text-lg">
-                    <i data-lucide="help-circle" class="w-6 h-6 text-blue-600"></i>
+                <div class="flex items-center space-x-2 text-gray-900 font-bold text-base">
+                    <i data-lucide="help-circle" class="w-5 h-5 text-blue-600"></i>
                     <span>이용가이드</span>
                 </div>
                 <span class="text-xs text-gray-500">초보자 안내</span>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
-                <div class="p-4 rounded-lg border border-gray-200 bg-gray-50/50 space-y-2">
+                <div class="p-4 rounded-xl border border-gray-200 bg-gray-50/50 space-y-2">
                     <div class="w-7 h-7 bg-blue-100 text-blue-600 font-bold rounded-lg flex items-center justify-center">1</div>
-                    <h4 class="font-bold text-gray-800">사이트 선택 및 가입</h4>
+                    <h4 class="font-bold text-gray-800 text-sm">사이트 선택 및 가입</h4>
                     <p class="text-gray-500">상단 순위표를 참고하여 본인에게 알맞은 웹하드 또는 P2P 사이트를 선택합니다.</p>
                 </div>
-                <div class="p-4 rounded-lg border border-gray-200 bg-gray-50/50 space-y-2">
+                <div class="p-4 rounded-xl border border-gray-200 bg-gray-50/50 space-y-2">
                     <div class="w-7 h-7 bg-blue-100 text-blue-600 font-bold rounded-lg flex items-center justify-center">2</div>
-                    <h4 class="font-bold text-gray-800">무료 쿠폰 등록</h4>
+                    <h4 class="font-bold text-gray-800 text-sm">무료 쿠폰 등록</h4>
                     <p class="text-gray-500">혜택 및 쿠폰 메뉴에서 전용 쿠폰번호를 발급받아 사이트에 등록합니다.</p>
                 </div>
-                <div class="p-4 rounded-lg border border-gray-200 bg-gray-50/50 space-y-2">
+                <div class="p-4 rounded-xl border border-gray-200 bg-gray-50/50 space-y-2">
                     <div class="w-7 h-7 bg-blue-100 text-blue-600 font-bold rounded-lg flex items-center justify-center">3</div>
-                    <h4 class="font-bold text-gray-800">안전한 다운로드</h4>
+                    <h4 class="font-bold text-gray-800 text-sm">안전한 다운로드</h4>
                     <p class="text-gray-500">전용 전용기를 설치하여 고속 다운로드 및 스트리밍을 즐깁니다.</p>
                 </div>
             </div>
         </div>
 
         <!-- 8. 혜택및쿠폰 -->
-        <div id="coupon" class="bg-white rounded-xl shadow-sm border border-gray-200 p-6 space-y-4">
+        <div id="coupon" class="bg-white rounded-2xl shadow-sm border border-gray-200 p-6 space-y-4">
             <div class="flex items-center justify-between border-b pb-4">
-                <div class="flex items-center space-x-2 text-gray-900 font-bold text-lg">
-                    <i data-lucide="gift" class="w-6 h-6 text-blue-600"></i>
+                <div class="flex items-center space-x-2 text-gray-900 font-bold text-base">
+                    <i data-lucide="gift" class="w-5 h-5 text-blue-600"></i>
                     <span>혜택및쿠폰 안내</span>
                 </div>
                 <span class="text-xs text-blue-600 font-semibold bg-blue-50 px-2.5 py-1 rounded">FREE COUPON</span>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
-                <div class="p-4 rounded-lg border border-blue-200 bg-blue-50/40 flex justify-between items-center">
+                <div class="p-4 rounded-xl border border-blue-200 bg-blue-50/40 flex justify-between items-center">
                     <div class="space-y-1">
                         <span class="font-bold text-blue-700 text-sm">파일노리 10만포인트 쿠폰</span>
                         <p class="text-gray-500">등록 코드: <span class="font-mono font-bold text-gray-700">FILE-NORI-2026</span></p>
                     </div>
-                    <button class="bg-blue-600 text-white font-semibold px-3 py-1.5 rounded hover:bg-blue-700">복사하기</button>
+                    <button class="bg-blue-600 text-white font-semibold px-3 py-1.5 rounded-lg hover:bg-blue-700">복사하기</button>
                 </div>
-                <div class="p-4 rounded-lg border border-blue-200 bg-blue-50/40 flex justify-between items-center">
+                <div class="p-4 rounded-xl border border-blue-200 bg-blue-50/40 flex justify-between items-center">
                     <div class="space-y-1">
                         <span class="font-bold text-blue-700 text-sm">파일디스크 보너스 쿠폰</span>
                         <p class="text-gray-500">등록 코드: <span class="font-mono font-bold text-gray-700">FILE-DISK-FREE</span></p>
                     </div>
-                    <button class="bg-blue-600 text-white font-semibold px-3 py-1.5 rounded hover:bg-blue-700">복사하기</button>
+                    <button class="bg-blue-600 text-white font-semibold px-3 py-1.5 rounded-lg hover:bg-blue-700">복사하기</button>
                 </div>
             </div>
         </div>
 
         <!-- 9. 자주묻는 질문 -->
-        <div class="bg-white rounded-xl shadow-sm border border-gray-200 p-6 space-y-4">
+        <div class="bg-white rounded-2xl shadow-sm border border-gray-200 p-6 space-y-4">
             <div class="flex items-center justify-between border-b pb-4">
-                <div class="flex items-center space-x-2 text-gray-900 font-bold text-lg">
-                    <i data-lucide="help-circle" class="w-6 h-6 text-blue-600"></i>
+                <div class="flex items-center space-x-2 text-gray-900 font-bold text-base">
+                    <i data-lucide="help-circle" class="w-5 h-5 text-blue-600"></i>
                     <span>자주묻는 질문 (FAQ)</span>
                 </div>
                 <span class="text-xs text-gray-500">고객 센터 도움말</span>
             </div>
             
             <div class="space-y-3 text-xs">
-                <div class="p-3.5 rounded-lg border border-gray-200 bg-gray-50/50 space-y-1.5">
+                <div class="p-4 rounded-xl border border-gray-200 bg-gray-50/50 space-y-1.5">
                     <div class="flex items-center justify-between font-bold text-gray-800">
                         <span class="flex items-center space-x-2">
                             <span class="text-blue-600">Q.</span>
@@ -503,7 +490,7 @@
                     </p>
                 </div>
 
-                <div class="p-3.5 rounded-lg border border-gray-200 bg-gray-50/50 space-y-1.5">
+                <div class="p-4 rounded-xl border border-gray-200 bg-gray-50/50 space-y-1.5">
                     <div class="flex items-center justify-between font-bold text-gray-800">
                         <span class="flex items-center space-x-2">
                             <span class="text-blue-600">Q.</span>
@@ -516,7 +503,7 @@
                     </p>
                 </div>
 
-                <div class="p-3.5 rounded-lg border border-gray-200 bg-gray-50/50 space-y-1.5">
+                <div class="p-4 rounded-xl border border-gray-200 bg-gray-50/50 space-y-1.5">
                     <div class="flex items-center justify-between font-bold text-gray-800">
                         <span class="flex items-center space-x-2">
                             <span class="text-blue-600">Q.</span>
@@ -537,10 +524,9 @@
     <footer class="bg-gray-800 text-gray-400 text-xs py-8 mt-12 border-t border-gray-700">
         <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
             <div class="flex items-center space-x-2">
-                <i data-lucide="hard-drive" class="w-5 h-5 text-gray-300"></i>
-                <span class="font-bold text-gray-200 text-sm">FILEHUB Services</span>
+                <span class="font-bold text-gray-200 text-sm">2026 RANK TOP Services</span>
             </div>
-            <p>Copyright &copy; 2026 FILEHUB Inc. All rights reserved.</p>
+            <p>Copyright &copy; 2026 RANK TOP Inc. All rights reserved.</p>
             <div class="flex space-x-4">
                 <a href="#" class="hover:text-white">이용약관</a>
                 <a href="#" class="hover:text-white font-bold text-gray-200">개인정보처리방침</a>
