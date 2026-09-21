@@ -106,7 +106,7 @@
     <!-- 본문 컨테이너 -->
     <main class="max-w-6xl mx-auto px-4 py-8 space-y-8">
 
-        <!-- 웹하드 사이트 순위 (시안 스타일 적용) -->
+        <!-- 웹하드 사이트 순위 -->
         <div id="rank" class="bg-white rounded-2xl shadow-sm border border-gray-200 p-6 space-y-6">
             
             <!-- 테이블 상단 타이틀 및 안내 문구 -->
@@ -120,19 +120,15 @@
                 </div>
             </div>
 
-            <!-- 모바일 전용 카드형 뷰 (모바일 화면에서 깨짐 방지) -->
-            <div class="md:hidden space-y-3">
-                <!-- 1위 -->
-                <div class="p-4 rounded-xl border border-gray-100 bg-gray-50/50 space-y-3">
+            <!-- 모바일 전용 카드형 뷰 (홀수: 흰색 / 짝수: 옅은 회색) -->
+            <div class="md:hidden space-y-2">
+                <!-- 1위 (홀수: 흰색 배경) -->
+                <div class="p-4 rounded-xl border border-gray-100 bg-white space-y-3">
                     <div class="flex justify-between items-center">
-                      <div class="flex items-center space-x-2">
-                            <!-- 사이트 로고 이미지 아이콘 -->
-                            <img src="https://rankify.site/favicons/ssadafile.com.png" alt="싸다파일 로고" class="w-5 h-5 rounded-md object-contain">
-                            
-                            <a href="#" class="font-bold text-gray-900 hover:text-blue-600 flex items-center space-x-1">
-                                <span>싸다파일</span>
-                                <i data-lucide="external-link" class="w-3 h-3 text-gray-400"></i>
-                            </a>
+                        <div class="flex items-center space-x-2">
+                            <div class="font-bold text-amber-500 text-sm flex items-center">1 <span class="text-[10px] text-green-600 ml-1">▲1</span></div>
+                            <span class="font-bold text-gray-800 text-sm flex items-center">싸다파일 <i data-lucide="external-link" class="w-3 h-3 ml-1 text-gray-400"></i></span>
+                            <span class="bg-gray-100 text-gray-600 text-[10px] px-1.5 py-0.5 rounded">종합</span>
                             <span class="bg-gray-100 text-gray-600 text-[10px] px-1.5 py-0.5 rounded">종합</span>
                         </div>
                     </div>
@@ -142,13 +138,13 @@
                     </div>
                 </div>
 
-                <!-- 2위 -->
-                <div class="p-4 rounded-xl border border-gray-100 bg-gray-50/50 space-y-3">
+                <!-- 2위 (짝수: 옅은 회색 배경) -->
+                <div class="p-4 rounded-xl border border-gray-100 bg-gray-100/70 space-y-3">
                     <div class="flex justify-between items-center">
                         <div class="flex items-center space-x-2">
                             <div class="font-bold text-gray-700 text-sm flex items-center">2 <span class="text-[10px] text-red-500 ml-1">▼1</span></div>
                             <span class="font-bold text-gray-800 text-sm flex items-center">예스파일 <i data-lucide="external-link" class="w-3 h-3 ml-1 text-gray-400"></i></span>
-                            <span class="bg-gray-100 text-gray-600 text-[10px] px-1.5 py-0.5 rounded">종합</span>
+                            <span class="bg-gray-200 text-gray-600 text-[10px] px-1.5 py-0.5 rounded">종합</span>
                         </div>
                     </div>
                     <p class="text-xs text-gray-600">대용량 자료 전송 최적화 및 안정성 우수</p>
@@ -157,8 +153,8 @@
                     </div>
                 </div>
 
-                <!-- 3위 -->
-                <div class="p-4 rounded-xl border border-gray-100 bg-gray-50/50 space-y-3">
+                <!-- 3위 (홀수: 흰색 배경) -->
+                <div class="p-4 rounded-xl border border-gray-100 bg-white space-y-3">
                     <div class="flex justify-between items-center">
                         <div class="flex items-center space-x-2">
                             <div class="font-bold text-amber-600 text-sm flex items-center">3 <span class="text-[10px] text-gray-400 ml-1">-</span></div>
@@ -173,13 +169,13 @@
                     </div>
                 </div>
 
-                <!-- 4위 -->
-                <div class="p-4 rounded-xl border border-gray-100 bg-gray-50/50 space-y-3">
+                <!-- 4위 (짝수: 옅은 회색 배경) -->
+                <div class="p-4 rounded-xl border border-gray-100 bg-gray-100/70 space-y-3">
                     <div class="flex justify-between items-center">
                         <div class="flex items-center space-x-2">
                             <div class="font-bold text-gray-600 text-sm flex items-center">4 <span class="text-[10px] text-gray-400 ml-1">-</span></div>
                             <span class="font-bold text-gray-800 text-sm flex items-center">위디스크 <i data-lucide="external-link" class="w-3 h-3 ml-1 text-gray-400"></i></span>
-                            <span class="bg-gray-100 text-gray-600 text-[10px] px-1.5 py-0.5 rounded">종합</span>
+                            <span class="bg-gray-200 text-gray-600 text-[10px] px-1.5 py-0.5 rounded">종합</span>
                         </div>
                     </div>
                     <p class="text-xs text-gray-600">대용량 자료 전송 최적화 및 안정성 우수</p>
@@ -188,8 +184,8 @@
                     </div>
                 </div>
 
-                <!-- 5위 -->
-                <div class="p-4 rounded-xl border border-gray-100 bg-gray-50/50 space-y-3">
+                <!-- 5위 (홀수: 흰색 배경) -->
+                <div class="p-4 rounded-xl border border-gray-100 bg-white space-y-3">
                     <div class="flex justify-between items-center">
                         <div class="flex items-center space-x-2">
                             <div class="font-bold text-gray-600 text-sm flex items-center">5 <span class="text-[10px] text-gray-400 ml-1">-</span></div>
@@ -204,12 +200,12 @@
                 </div>
             </div>
 
-            <!-- PC 전용 테이블 뷰 (이미지 시안 구조 반영) -->
+            <!-- PC 전용 테이블 뷰 (홀수: 흰색 / 짝수: 옅은 회색) -->
             <div class="hidden md:block overflow-x-auto">
                 <table class="w-full text-left text-sm text-gray-600">
                     <tbody class="divide-y divide-gray-100 text-xs">
-                        <!-- 1위 -->
-                        <tr class="hover:bg-gray-50/50 transition-colors">
+                        <!-- 1위 (홀수: 흰색) -->
+                        <tr class="bg-white hover:bg-gray-50 transition-colors">
                             <td class="py-4 px-4 w-20">
                                 <div class="font-extrabold text-amber-500 text-sm">1</div>
                                 <div class="text-[10px] text-green-600 font-semibold flex items-center mt-0.5">▲1</div>
@@ -233,8 +229,8 @@
                             </td>
                         </tr>
 
-                        <!-- 2위 -->
-                        <tr class="hover:bg-gray-50/50 transition-colors">
+                        <!-- 2위 (짝수: 옅은 회색) -->
+                        <tr class="bg-gray-50/70 hover:bg-gray-100/70 transition-colors">
                             <td class="py-4 px-4 w-20">
                                 <div class="font-extrabold text-gray-700 text-sm">2</div>
                                 <div class="text-[10px] text-red-500 font-semibold flex items-center mt-0.5">▼1</div>
@@ -245,7 +241,7 @@
                                         <span>예스파일</span>
                                         <i data-lucide="external-link" class="w-3 h-3 text-gray-400"></i>
                                     </a>
-                                    <span class="bg-gray-100 text-gray-600 text-[10px] px-1.5 py-0.5 rounded">종합</span>
+                                    <span class="bg-gray-200 text-gray-600 text-[10px] px-1.5 py-0.5 rounded">종합</span>
                                 </div>
                             </td>
                             <td class="py-4 px-4 text-gray-600">대용량 자료 전송 최적화 및 안정성 우수</td>
@@ -257,8 +253,8 @@
                             </td>
                         </tr>
 
-                        <!-- 3위 -->
-                        <tr class="hover:bg-gray-50/50 transition-colors">
+                        <!-- 3위 (홀수: 흰색) -->
+                        <tr class="bg-white hover:bg-gray-50 transition-colors">
                             <td class="py-4 px-4 w-20">
                                 <div class="font-extrabold text-amber-600 text-sm">3</div>
                                 <div class="text-[10px] text-gray-400 font-semibold flex items-center mt-0.5">-</div>
@@ -282,8 +278,8 @@
                             </td>
                         </tr>
 
-                        <!-- 4위 -->
-                        <tr class="hover:bg-gray-50/50 transition-colors">
+                        <!-- 4위 (짝수: 옅은 회색) -->
+                        <tr class="bg-gray-50/70 hover:bg-gray-100/70 transition-colors">
                             <td class="py-4 px-4 w-20">
                                 <div class="font-extrabold text-gray-600 text-sm">4</div>
                                 <div class="text-[10px] text-gray-400 font-semibold flex items-center mt-0.5">-</div>
@@ -294,7 +290,7 @@
                                         <span>위디스크</span>
                                         <i data-lucide="external-link" class="w-3 h-3 text-gray-400"></i>
                                     </a>
-                                    <span class="bg-gray-100 text-gray-600 text-[10px] px-1.5 py-0.5 rounded">종합</span>
+                                    <span class="bg-gray-200 text-gray-600 text-[10px] px-1.5 py-0.5 rounded">종합</span>
                                 </div>
                             </td>
                             <td class="py-4 px-4 text-gray-600">대용량 자료 전송 최적화 및 안정성 우수</td>
@@ -306,8 +302,8 @@
                             </td>
                         </tr>
 
-                        <!-- 5위 -->
-                        <tr class="hover:bg-gray-50/50 transition-colors">
+                        <!-- 5위 (홀수: 흰색) -->
+                        <tr class="bg-white hover:bg-gray-50 transition-colors">
                             <td class="py-4 px-4 w-20">
                                 <div class="font-extrabold text-gray-600 text-sm">5</div>
                                 <div class="text-[10px] text-gray-400 font-semibold flex items-center mt-0.5">-</div>
