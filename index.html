@@ -44,12 +44,36 @@
         </div>
     </header>
 
-    <!-- 메인 블루 배경 배너 -->
+    <!-- 메인 블루 배경 배너 (좌우 반전 적용) -->
     <section class="bg-blue-600 text-white py-10 md:py-12">
         <div class="max-w-6xl mx-auto px-4">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
                 
-                <!-- 좌측 등록사이트 및 방문자 카드 -->
+                <!-- 좌측 타이틀 및 서브 정보 (위치 변경됨) -->
+                <div class="lg:col-span-5 space-y-3">
+                    <div>
+                        <p class="text-xs text-blue-200 font-medium">2026년10월</p>
+                        <h1 class="text-2xl md:text-3xl font-extrabold tracking-tight mt-0.5">P2P사이트 · 웹하드순위</h1>
+                        <p class="text-xs text-blue-100 mt-1">19개 사이트의 오픈일·가입 혜택·이벤트 조건을 같은 기준으로 비교합니다.</p>
+                    </div>
+                    
+                    <div class="grid grid-cols-3 pt-2 border-t border-blue-500/50 text-xs gap-2">
+                        <div>
+                            <p class="text-blue-200">정보확인일</p>
+                            <p class="font-bold mt-0.5">2026년 9월</p>
+                        </div>
+                        <div>
+                            <p class="text-blue-200">혜택조건</p>
+                            <p class="font-bold mt-0.5">가입 시 충전포인트</p>
+                        </div>
+                        <div>
+                            <p class="text-blue-200">동일기준비교</p>
+                            <p class="font-bold mt-0.5">신규콘텐츠</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 우측 등록사이트 및 방문자 카드 (위치 변경됨) -->
                 <div class="lg:col-span-7 bg-white text-gray-800 rounded-2xl shadow-md p-6 border border-gray-100">
                     <div class="grid grid-cols-2 sm:grid-cols-4 divide-y sm:divide-y-0 sm:divide-x divide-gray-100 text-center gap-y-4 sm:gap-y-0">
                         <div class="flex flex-col items-center justify-center space-y-1">
@@ -75,30 +99,6 @@
                     </div>
                 </div>
 
-                <!-- 우측 타이틀 및 서브 정보 -->
-                <div class="lg:col-span-5 space-y-3">
-                    <div>
-                        <p class="text-xs text-blue-200 font-medium">2026년10월</p>
-                        <h1 class="text-2xl md:text-3xl font-extrabold tracking-tight mt-0.5">P2P사이트 · 웹하드순위</h1>
-                        <p class="text-xs text-blue-100 mt-1">19개 사이트의 오픈일·가입 혜택·이벤트 조건을 같은 기준으로 비교합니다.</p>
-                    </div>
-                    
-                    <div class="grid grid-cols-3 pt-2 border-t border-blue-500/50 text-xs gap-2">
-                        <div>
-                            <p class="text-blue-200">정보확인일</p>
-                            <p class="font-bold mt-0.5">2026년 9월</p>
-                        </div>
-                        <div>
-                            <p class="text-blue-200">혜택조건</p>
-                            <p class="font-bold mt-0.5">가입 시 충전포인트</p>
-                        </div>
-                        <div>
-                            <p class="text-blue-200">동일기준비교</p>
-                            <p class="font-bold mt-0.5">신규콘텐츠</p>
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </div>
     </section>
@@ -120,7 +120,7 @@
                 </div>
             </div>
 
-            <!-- 모바일 전용 카드형 뷰 (홀수: 흰색 / 짝수: 옅은 회색) -->
+            <!-- 모바일 전용 카드형 뷰 -->
             <div class="md:hidden space-y-2">
                 <!-- 1위 -->
                 <div class="p-4 rounded-xl border border-gray-100 bg-white space-y-3">
@@ -475,7 +475,7 @@
 
         </div>
 
-        <!-- 3. 세 번째 콘텐츠: 가입 전 체크리스트 및 FAQ, 운영 원칙 안내 (신규 추가) -->
+        <!-- 3. 세 번째 콘텐츠: 가입 전 체크리스트 및 FAQ, 운영 원칙 안내 -->
         <div class="bg-white rounded-2xl shadow-sm border border-gray-200 p-6 md:p-8 space-y-10">
             
             <!-- 가입 전 체크리스트 영역 -->
