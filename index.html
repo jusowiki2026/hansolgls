@@ -330,7 +330,7 @@
             </div>
         </div>
 
-        <!-- 2. 두 번째 콘텐츠: 순위를 정할 때 확인한 네 가지 항목 (시안 반영 + 연두색을 푸른색 계열로 변경) -->
+        <!-- 2. 두 번째 콘텐츠: 순위를 정할 때 확인한 네 가지 항목 -->
         <div class="bg-white rounded-2xl shadow-sm border border-gray-200 p-6 md:p-8 space-y-8">
             
             <!-- 상단 정보확인 및 안내 문구 영역 -->
@@ -352,7 +352,7 @@
                     </p>
                 </div>
 
-                <!-- 안내 박스 (기존 연두색 계열에서 메인 푸른색 계열로 수정) -->
+                <!-- 안내 박스 -->
                 <div class="bg-blue-50/80 border border-blue-100 rounded-xl p-4 text-xs md:text-sm text-blue-900 space-y-1">
                     <p class="font-medium">
                         이 페이지에는 제휴 링크가 포함되어 있으며 링크를 통한 가입이나 이용이 발생하면 운영자가 수수료를 받을 수 있습니다.
@@ -433,7 +433,7 @@
                 </div>
             </div>
 
-            <!-- 하단 비교 항목 테이블 (헤더 영역 푸른색 계열 톤 적용) -->
+            <!-- 하단 비교 항목 테이블 -->
             <div class="overflow-x-auto pt-4">
                 <table class="w-full text-left text-xs md:text-sm border border-gray-200 rounded-xl overflow-hidden">
                     <thead class="bg-blue-50 text-blue-900 font-semibold border-b border-gray-200">
@@ -471,6 +471,99 @@
                         </tr>
                     </tbody>
                 </table>
+            </div>
+
+        </div>
+
+        <!-- 3. 세 번째 콘텐츠: 가입 전 체크리스트 및 FAQ, 운영 원칙 안내 (신규 추가) -->
+        <div class="bg-white rounded-2xl shadow-sm border border-gray-200 p-6 md:p-8 space-y-10">
+            
+            <!-- 가입 전 체크리스트 영역 -->
+            <div class="space-y-4">
+                <div class="inline-flex items-center space-x-1.5 bg-blue-50 text-blue-700 text-xs font-semibold px-2.5 py-1 rounded-md">
+                    <span>가입 전 체크</span>
+                </div>
+                <h3 class="text-xl font-extrabold text-gray-900">
+                    P2P사이트 이용 전 확인할 체크리스트
+                </h3>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                    <div class="flex items-center space-x-3 bg-gray-50/60 border border-gray-200/70 rounded-xl p-4 text-xs md:text-sm text-gray-700">
+                        <span class="flex-shrink-0 w-5 h-5 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center font-bold text-xs">✓</span>
+                        <span>주소창의 HTTPS 보안 연결과 공식 도메인을 확인합니다.</span>
+                    </div>
+                    <div class="flex items-center space-x-3 bg-gray-50/60 border border-gray-200/70 rounded-xl p-4 text-xs md:text-sm text-gray-700">
+                        <span class="flex-shrink-0 w-5 h-5 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center font-bold text-xs">✓</span>
+                        <span>가입 포인트의 사용처와 유효기간을 확인합니다.</span>
+                    </div>
+                    <div class="flex items-center space-x-3 bg-gray-50/60 border border-gray-200/70 rounded-xl p-4 text-xs md:text-sm text-gray-700">
+                        <span class="flex-shrink-0 w-5 h-5 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center font-bold text-xs">✓</span>
+                        <span>무료 체험 뒤 유료 이용권으로 자동 전환되는지 살펴봅니다.</span>
+                    </div>
+                    <div class="flex items-center space-x-3 bg-gray-50/60 border border-gray-200/70 rounded-xl p-4 text-xs md:text-sm text-gray-700">
+                        <span class="flex-shrink-0 w-5 h-5 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center font-bold text-xs">✓</span>
+                        <span>정기 결제일과 해지·환불 방법을 미리 확인합니다.</span>
+                    </div>
+                    <div class="flex items-center space-x-3 bg-gray-50/60 border border-gray-200/70 rounded-xl p-4 text-xs md:text-sm text-gray-700">
+                        <span class="flex-shrink-0 w-5 h-5 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center font-bold text-xs">✓</span>
+                        <span>모바일에서 검색과 결제 화면이 정상적으로 보이는지 확인합니다.</span>
+                    </div>
+                    <div class="flex items-center space-x-3 bg-gray-50/60 border border-gray-200/70 rounded-xl p-4 text-xs md:text-sm text-gray-700">
+                        <span class="flex-shrink-0 w-5 h-5 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center font-bold text-xs">✓</span>
+                        <span>설치 파일은 공식 경로에서 받고 백신 검사를 진행합니다.</span>
+                    </div>
+                    <div class="flex items-center space-x-3 bg-gray-50/60 border border-gray-200/70 rounded-xl p-4 text-xs md:text-sm text-gray-700">
+                        <span class="flex-shrink-0 w-5 h-5 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center font-bold text-xs">✓</span>
+                        <span>개인정보처리방침과 고객센터 문의 방법을 확인합니다.</span>
+                    </div>
+                    <div class="flex items-center space-x-3 bg-gray-50/60 border border-gray-200/70 rounded-xl p-4 text-xs md:text-sm text-gray-700">
+                        <span class="flex-shrink-0 w-5 h-5 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center font-bold text-xs">✓</span>
+                        <span>영화·방송·도서 등은 권리자가 허용한 범위에서 이용합니다.</span>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="border-gray-100">
+
+            <!-- 자주 묻는 질문 FAQ 영역 -->
+            <div class="space-y-4">
+                <div class="inline-flex items-center space-x-1.5 bg-blue-50 text-blue-700 text-xs font-semibold px-2.5 py-1 rounded-md">
+                    <span>FAQ</span>
+                </div>
+                <h3 class="text-xl font-extrabold text-gray-900">
+                    P2P사이트 순위 자주 묻는 질문
+                </h3>
+
+                <div class="space-y-3">
+                    <div class="bg-gray-50/60 border border-gray-200/70 rounded-xl p-5 space-y-2">
+                        <h4 class="font-bold text-gray-900 text-sm md:text-base">순위 1위가 모든 이용에게 가장 좋은가요?</h4>
+                        <p class="text-xs md:text-sm text-gray-600 leading-relaxed">
+                            아닙니다. 원하는 콘텐츠, 이용 빈도, 결제 방식과 사용하는 기기가 다르므로 순위는 후보를 좁히는 참고 자료로 보는 것이 좋습니다.
+                        </p>
+                    </div>
+
+                    <div class="bg-gray-50/60 border border-gray-200/70 rounded-xl p-5 space-y-2">
+                        <h4 class="font-bold text-gray-900 text-sm md:text-base">무료 포인트는 모든 콘텐츠에 사용할 수 있나요?</h4>
+                        <p class="text-xs md:text-sm text-gray-600 leading-relaxed">
+                            서비스와 이벤트마다 다릅니다. 일반 포인트와 보너스 포인트의 사용처가 다르거나 일부 제휴 컨텐츠가 제외될 수 있으므로 공식 조건을 확인해야 합니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="border-gray-100">
+
+            <!-- 운영 원칙 안내 영역 -->
+            <div class="space-y-3">
+                <div class="inline-flex items-center space-x-1.5 bg-blue-50 text-blue-700 text-xs font-semibold px-2.5 py-1 rounded-md">
+                    <span>운영 원칙</span>
+                </div>
+                <h3 class="text-lg font-bold text-gray-900">
+                    정보 수정·제휴 및 개인정보 안내
+                </h3>
+                <p class="text-xs md:text-sm text-gray-600 leading-relaxed">
+                    혜택이나 운영 정보가 변경된 경우 사이트의 제휴 문의 채널을 통해 수정 요청을 받을 수 있습니다. 이 페이지는 검색과 클릭 집계를 위해 브라우저 저장소를 사용할 수 있으며, 회원가입과 결제 과정에서 입력하는 개인정보는 이동한 외부 서비스의 개인정보처리방침을 따릅니다.
+                </p>
             </div>
 
         </div>
