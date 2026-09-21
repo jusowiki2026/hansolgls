@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>웹하드 & P2P 통합 플랫폼 순위</title>
+    <title>웹하드 & P2P 통합 플랫폼 순위 및 가이드</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- Lucide Icons -->
@@ -104,9 +104,9 @@
     </section>
 
     <!-- 본문 컨테이너 -->
-    <main class="max-w-6xl mx-auto px-4 py-8 space-y-8">
+    <main class="max-w-6xl mx-auto px-4 py-8 space-y-12">
 
-        <!-- 웹하드 사이트 순위 -->
+        <!-- 1. 웹하드 사이트 순위 -->
         <div id="rank" class="bg-white rounded-2xl shadow-sm border border-gray-200 p-6 space-y-6">
             
             <!-- 테이블 상단 타이틀 및 안내 문구 -->
@@ -122,7 +122,7 @@
 
             <!-- 모바일 전용 카드형 뷰 (홀수: 흰색 / 짝수: 옅은 회색) -->
             <div class="md:hidden space-y-2">
-                <!-- 1위 (홀수: 흰색 배경) -->
+                <!-- 1위 -->
                 <div class="p-4 rounded-xl border border-gray-100 bg-white space-y-3">
                     <div class="flex justify-between items-center">
                         <div class="flex items-center space-x-2">
@@ -138,7 +138,7 @@
                     </div>
                 </div>
 
-                <!-- 2위 (짝수: 옅은 회색 배경) -->
+                <!-- 2위 -->
                 <div class="p-4 rounded-xl border border-gray-100 bg-gray-100/70 space-y-3">
                     <div class="flex justify-between items-center">
                         <div class="flex items-center space-x-2">
@@ -153,7 +153,7 @@
                     </div>
                 </div>
 
-                <!-- 3위 (홀수: 흰색 배경) -->
+                <!-- 3위 -->
                 <div class="p-4 rounded-xl border border-gray-100 bg-white space-y-3">
                     <div class="flex justify-between items-center">
                         <div class="flex items-center space-x-2">
@@ -169,7 +169,7 @@
                     </div>
                 </div>
 
-                <!-- 4위 (짝수: 옅은 회색 배경) -->
+                <!-- 4위 -->
                 <div class="p-4 rounded-xl border border-gray-100 bg-gray-100/70 space-y-3">
                     <div class="flex justify-between items-center">
                         <div class="flex items-center space-x-2">
@@ -184,7 +184,7 @@
                     </div>
                 </div>
 
-                <!-- 5위 (홀수: 흰색 배경) -->
+                <!-- 5위 -->
                 <div class="p-4 rounded-xl border border-gray-100 bg-white space-y-3">
                     <div class="flex justify-between items-center">
                         <div class="flex items-center space-x-2">
@@ -200,11 +200,11 @@
                 </div>
             </div>
 
-            <!-- PC 전용 테이블 뷰 (홀수: 흰색 / 짝수: 옅은 회색) -->
+            <!-- PC 전용 테이블 뷰 -->
             <div class="hidden md:block overflow-x-auto">
                 <table class="w-full text-left text-sm text-gray-600">
                     <tbody class="divide-y divide-gray-100 text-xs">
-                        <!-- 1위 (홀수: 흰색) -->
+                        <!-- 1위 -->
                         <tr class="bg-white hover:bg-gray-50 transition-colors">
                             <td class="py-4 px-4 w-20">
                                 <div class="font-extrabold text-amber-500 text-sm">1</div>
@@ -229,7 +229,7 @@
                             </td>
                         </tr>
 
-                        <!-- 2위 (짝수: 옅은 회색) -->
+                        <!-- 2위 -->
                         <tr class="bg-gray-50/70 hover:bg-gray-100/70 transition-colors">
                             <td class="py-4 px-4 w-20">
                                 <div class="font-extrabold text-gray-700 text-sm">2</div>
@@ -253,7 +253,7 @@
                             </td>
                         </tr>
 
-                        <!-- 3위 (홀수: 흰색) -->
+                        <!-- 3위 -->
                         <tr class="bg-white hover:bg-gray-50 transition-colors">
                             <td class="py-4 px-4 w-20">
                                 <div class="font-extrabold text-amber-600 text-sm">3</div>
@@ -278,7 +278,7 @@
                             </td>
                         </tr>
 
-                        <!-- 4위 (짝수: 옅은 회색) -->
+                        <!-- 4위 -->
                         <tr class="bg-gray-50/70 hover:bg-gray-100/70 transition-colors">
                             <td class="py-4 px-4 w-20">
                                 <div class="font-extrabold text-gray-600 text-sm">4</div>
@@ -302,7 +302,7 @@
                             </td>
                         </tr>
 
-                        <!-- 5위 (홀수: 흰색) -->
+                        <!-- 5위 -->
                         <tr class="bg-white hover:bg-gray-50 transition-colors">
                             <td class="py-4 px-4 w-20">
                                 <div class="font-extrabold text-gray-600 text-sm">5</div>
@@ -328,6 +328,151 @@
                     </tbody>
                 </table>
             </div>
+        </div>
+
+        <!-- 2. 두 번째 콘텐츠: 순위를 정할 때 확인한 네 가지 항목 (시안 반영 + 연두색을 푸른색 계열로 변경) -->
+        <div class="bg-white rounded-2xl shadow-sm border border-gray-200 p-6 md:p-8 space-y-8">
+            
+            <!-- 상단 정보확인 및 안내 문구 영역 -->
+            <div class="space-y-4">
+                <div class="inline-block bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded shadow-sm">
+                    2026년 9월 24일 정보확인
+                </div>
+                
+                <h2 class="text-xl md:text-2xl font-extrabold text-gray-900">
+                    P2P사이트 순위는 혜택보다 이용 조건을 함께 비교하세요
+                </h2>
+
+                <div class="text-sm text-gray-600 space-y-3 leading-relaxed">
+                    <p>
+                        P2P사이트 순위는 방문자 수나 가입 포인트 하나만으로 결정할 수 없습니다. 검색 결과가 보기 쉬운지, 모바일에서도 주요 기능을 사용할 수 있는지, 포인트의 사용 범위와 유효기간이 명확한지, 정기 이용권의 자동 갱신과 해지 방법이 안내되는지를 함께 살펴봐야 실제 선택에 도움이 됩니다.
+                    </p>
+                    <p>
+                        위 목록은 19개 서비스의 오픈일과 공개된 혜택 문구를 같은 형식으로 정리한 비교 자료입니다. 표시 순서는 편집 기준에 따른 참고 순위이며 모든 이용에게 동일한 정답을 의미하지 않습니다. 이벤트와 포인트 조건은 변경될 수 있으므로 가입 또는 결제 직전에 각 서비스의 공식 안내와 이용약관을 다시 확인하세요.
+                    </p>
+                </div>
+
+                <!-- 안내 박스 (기존 연두색 계열에서 메인 푸른색 계열로 수정) -->
+                <div class="bg-blue-50/80 border border-blue-100 rounded-xl p-4 text-xs md:text-sm text-blue-900 space-y-1">
+                    <p class="font-medium">
+                        이 페이지에는 제휴 링크가 포함되어 있으며 링크를 통한 가입이나 이용이 발생하면 운영자가 수수료를 받을 수 있습니다.
+                    </p>
+                    <p class="font-medium">
+                        저작권자가 허용한 합법적인 콘텐츠만 이용하는 것을 전제로 안내합니다.
+                    </p>
+                </div>
+            </div>
+
+            <hr class="border-gray-100">
+
+            <!-- 네 가지 항목 카드 영역 -->
+            <div class="space-y-4">
+                <div class="inline-flex items-center space-x-1.5 bg-blue-50 text-blue-700 text-xs font-semibold px-2.5 py-1 rounded-md">
+                    <span>비교 기준</span>
+                </div>
+                <h3 class="text-lg font-bold text-gray-900">
+                    순위를 정할 때 확인한 네 가지 항목
+                </h3>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                    <!-- 1번 항목 -->
+                    <div class="bg-gray-50/50 border border-gray-200/80 rounded-xl p-5 space-y-3 hover:border-blue-300 transition-colors">
+                        <div class="flex items-center justify-between">
+                            <span class="bg-blue-600 text-white text-xs font-bold px-2 py-0.5 rounded">01</span>
+                            <div class="w-2 h-2 rounded-full bg-blue-500"></div>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900 text-base">운영 정보</h4>
+                            <p class="text-xs text-gray-600 mt-1.5 leading-relaxed">
+                                최근 공지, 고객센터, 이용약관과 개인정보 안내를 찾기 쉬운지 확인합니다.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- 2번 항목 -->
+                    <div class="bg-gray-50/50 border border-gray-200/80 rounded-xl p-5 space-y-3 hover:border-blue-300 transition-colors">
+                        <div class="flex items-center justify-between">
+                            <span class="bg-blue-600 text-white text-xs font-bold px-2 py-0.5 rounded">02</span>
+                            <div class="w-2 h-2 rounded-full bg-blue-500"></div>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900 text-base">검색 편의</h4>
+                            <p class="text-xs text-gray-600 mt-1.5 leading-relaxed">
+                                카테고리, 정렬, 상세 설명과 모바일 검색 과정이 이해하기 쉬운지 살펴봅니다.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- 3번 항목 -->
+                    <div class="bg-gray-50/50 border border-gray-200/80 rounded-xl p-5 space-y-3 hover:border-blue-300 transition-colors">
+                        <div class="flex items-center justify-between">
+                            <span class="bg-blue-600 text-white text-xs font-bold px-2 py-0.5 rounded">03</span>
+                            <div class="w-2 h-2 rounded-full bg-blue-500"></div>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900 text-base">혜택 조건</h4>
+                            <p class="text-xs text-gray-600 mt-1.5 leading-relaxed">
+                                지급 대상, 사용처, 유효기간, 본인인증과 첫 결제 조건을 구분해 확인합니다.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- 4번 항목 -->
+                    <div class="bg-gray-50/50 border border-gray-200/80 rounded-xl p-5 space-y-3 hover:border-blue-300 transition-colors">
+                        <div class="flex items-center justify-between">
+                            <span class="bg-blue-600 text-white text-xs font-bold px-2 py-0.5 rounded">04</span>
+                            <div class="w-2 h-2 rounded-full bg-blue-500"></div>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900 text-base">결제 안내</h4>
+                            <p class="text-xs text-gray-600 mt-1.5 leading-relaxed">
+                                정기 이용권의 자동 갱신, 해지 시점, 환불 기준이 명확한지 비교합니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 하단 비교 항목 테이블 (헤더 영역 푸른색 계열 톤 적용) -->
+            <div class="overflow-x-auto pt-4">
+                <table class="w-full text-left text-xs md:text-sm border border-gray-200 rounded-xl overflow-hidden">
+                    <thead class="bg-blue-50 text-blue-900 font-semibold border-b border-gray-200">
+                        <tr>
+                            <th class="py-3 px-4 w-32">비교 항목</th>
+                            <th class="py-3 px-4">확인 내용</th>
+                            <th class="py-3 px-4">가입 전 판단 방법</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-100 text-gray-700 bg-white">
+                        <tr class="hover:bg-gray-50 transition-colors">
+                            <td class="py-3 px-4 font-semibold text-gray-900">포인트·쿠폰</td>
+                            <td class="py-3 px-4">사용 가능 콘텐츠, 소멸일, 중복 적용 조건</td>
+                            <td class="py-3 px-4">큰 숫자보다 실제 사용할 수 있는 범위를 먼저 확인</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50 transition-colors">
+                            <td class="py-3 px-4 font-semibold text-gray-900">모바일 이용</td>
+                            <td class="py-3 px-4">검색, 결제, 이용 내역, 앱 또는 모바일 웹 지원</td>
+                            <td class="py-3 px-4">주로 사용하는 기기에서 직접 메뉴와 글자 크기 확인</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50 transition-colors">
+                            <td class="py-3 px-4 font-semibold text-gray-900">설치 프로그램</td>
+                            <td class="py-3 px-4">필수 설치 항목, 제공 권한, 삭제 방법</td>
+                            <td class="py-3 px-4">공식 제공 파일인지 확인하고 불필요한 동반 설치 주의</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50 transition-colors">
+                            <td class="py-3 px-4 font-semibold text-gray-900">결제·해지</td>
+                            <td class="py-3 px-4">자동 결제, 갱신일, 환불과 남은 포인트 처리</td>
+                            <td class="py-3 px-4">결제 직전 최종 금액과 해지 경로를 화면에서 확인</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50 transition-colors">
+                            <td class="py-3 px-4 font-semibold text-gray-900">콘텐츠 이용</td>
+                            <td class="py-3 px-4">제휴 표시, 권리 안내, 연령 제한과 제공 범위</td>
+                            <td class="py-3 px-4">저작권자가 허용한 공식 제공 콘텐츠만 이용</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
         </div>
 
     </main>
