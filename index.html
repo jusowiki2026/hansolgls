@@ -71,22 +71,22 @@
                         <div class="flex flex-col items-center justify-center space-y-1">
                             <i data-lucide="hard-drive" class="w-4 h-4 text-blue-600 mb-0.5"></i>
                             <span class="text-xs text-gray-500 font-medium">비교 사이트</span>
-                            <span class="text-2xl font-bold text-gray-900 tracking-tight">15개</span>
+                            <span class="text-2xl font-bold text-gray-900 tracking-tight"><span class="counter" data-target="15">0</span>개</span>
                         </div>
                         <div class="flex flex-col items-center justify-center space-y-1">
                             <i data-lucide="users" class="w-4 h-4 text-blue-600 mb-0.5"></i>
                             <span class="text-xs text-gray-500 font-medium">오늘 방문자</span>
-                            <span class="text-2xl font-bold text-gray-900 tracking-tight">420</span>
+                            <span class="text-2xl font-bold text-gray-900 tracking-tight"><span class="counter" data-target="420">0</span></span>
                         </div>
                         <div class="flex flex-col items-center justify-center space-y-1">
                             <i data-lucide="check-circle" class="w-4 h-4 text-blue-600 mb-0.5"></i>
                             <span class="text-xs text-gray-500 font-medium">어제 방문자</span>
-                            <span class="text-2xl font-bold text-gray-900 tracking-tight">380</span>
+                            <span class="text-2xl font-bold text-gray-900 tracking-tight"><span class="counter" data-target="380">0</span></span>
                         </div>
                         <div class="flex flex-col items-center justify-center space-y-1">
                             <i data-lucide="trending-up" class="w-4 h-4 text-blue-600 mb-0.5"></i>
                             <span class="text-xs text-gray-500 font-medium">누적 방문자</span>
-                            <span class="text-2xl font-bold text-gray-900 tracking-tight">9,250</span>
+                            <span class="text-2xl font-bold text-gray-900 tracking-tight"><span class="counter" data-target="9250">0</span></span>
                         </div>
                     </div>
                 </div>
@@ -386,14 +386,13 @@
     <!-- 하단 푸터가 들어갈 자리 -->
     <div id="footer-container"></div>
 
-    <!-- 자바스크립트: 컴포넌트 동적 로드 및 모바일 메뉴 이벤트 처리 -->
+    <!-- 자바스크립트: 컴포넌트 동적 로드, 모바일 메뉴 및 카운트업 애니메이션 처리 -->
     <script>
         // 비동기로 컴포넌트 파일을 불러와 지정한 컨테이너에 삽입하는 함수
         async function loadComponents() {
             try {
 				const rankRes = await fetch('https://jusowiki2026.github.io/hansolgls/components/rank.html');
                 document.getElementById('rank-container').innerHTML = await rankRes.text();
-
 
                 const headerRes = await fetch('https://jusowiki2026.github.io/hansolgls/components/header.html');
                 document.getElementById('header-container').innerHTML = await headerRes.text();
@@ -421,8 +420,43 @@
             }
         }
 
-        // 페이지가 모두 로드되면 컴포넌트 로드 함수 실행
-        document.addEventListener('DOMContentLoaded', loadComponents);
+        // 숫자 카운트업 애니메이션 함수
+        function startCounterAnimation() {
+            const counters = document.querySelectorAll('.counter');
+            const duration = 1500; // 애니메이션 지속 시간 (밀리초, 1.5초)
+
+            counters.forEach(counter => {
+                const target = +counter.getAttribute('data-target');
+                let startTime = null;
+
+                function updateCount(currentTime) {
+                    if (!startTime) startTime = currentTime;
+                    const progress = currentTime - startTime;
+                    const percentage = Math.min(progress / duration, 1);
+                    
+                    // easeOutExpo 부드러운 감속 효과 적용
+                    const easeProgress = percentage === 1 ? 1 : 1 - Math.pow(2, -10 * percentage);
+                    const currentVal = Math.floor(easeProgress * target);
+
+                    // 9,250 같은 큰 숫자는 3자리마다 쉼표(,) 포맷 적용
+                    counter.innerText = currentVal.toLocaleString();
+
+                    if (progress < duration) {
+                        requestAnimationFrame(updateCount);
+                    } else {
+                        counter.innerText = target.toLocaleString(); // 최종 정확한 값 고정
+                    }
+                }
+
+                requestAnimationFrame(updateCount);
+            });
+        }
+
+        // 페이지가 모두 로드되면 컴포넌트 로드 및 카운트업 애니메이션 실행
+        document.addEventListener('DOMContentLoaded', () => {
+            loadComponents();
+            startCounterAnimation();
+        });
     </script>
 </body>
 </html>
