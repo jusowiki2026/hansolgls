@@ -74,7 +74,7 @@
     <!-- 본문 컨테이너 -->
     <main class="max-w-6xl mx-auto px-4 py-8 space-y-12">
 
-<!-- 웹하드 사이트 순위 섹션 (TOP 10 + 모바일 좌우 분할 및 PC 한줄 정렬) -->
+<!-- 웹하드 사이트 순위 섹션 (모바일: 좌측 순위목록 / 우측 바로가기 버튼) -->
 <div id="rank" class="bg-white rounded-2xl shadow-sm border border-gray-200 p-6 space-y-6 max-w-6xl mx-auto my-6">
     <div class="flex flex-col md:flex-row md:items-center justify-between border-b border-gray-100 pb-4 gap-2">
         <div>
@@ -83,15 +83,10 @@
         </div>
     </div>
 
-    <!-- 모바일 전용 카드형 뷰 (좌측 정사각형 버튼 / 우측 콘텐츠) -->
+    <!-- 모바일 전용 카드형 뷰 (좌측 순위 내용 / 우측 정사각형 버튼) -->
     <div class="md:hidden space-y-3">
         <!-- 1위: 파일몽 -->
-        <div class="p-4 rounded-xl border border-gray-100 bg-white flex items-center space-x-3.5 shadow-xs">
-            <!-- 좌측 정사각형 바로가기 버튼 -->
-            <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="w-16 h-16 flex-shrink-0 bg-blue-600 text-white text-xs font-bold rounded-xl flex items-center justify-center text-center shadow-sm">
-                바로가기
-            </a>
-            <!-- 우측 상세 정보 영역 -->
+        <div class="p-4 rounded-xl border border-gray-100 bg-white flex items-center justify-between space-x-3.5 shadow-xs">
             <div class="flex-1 min-w-0 space-y-1.5">
                 <div class="flex items-center space-x-2 flex-wrap">
                     <span class="font-bold text-blue-600 text-sm">1위</span>
@@ -99,18 +94,17 @@
                     <img src="images/" alt="파일몽 로고" class="w-5 h-5 rounded object-cover border border-gray-100">
                     <span class="font-bold text-gray-900 text-sm">파일몽</span>
                     <span class="bg-blue-50 text-blue-600 text-[10px] px-1.5 py-0.5 rounded font-bold">추천</span>
-                    <span class="bg-purple-50 text-purple-600 text-[10px] px-1.5 py-0.5 rounded font-bold">실시간업데이트</span>
                     <span class="bg-amber-50 text-amber-600 text-[10px] px-1.5 py-0.5 rounded font-bold">이벤트</span>
                 </div>
                 <p class="text-xs text-gray-600 leading-snug">최신 콘텐츠와 다양한 자료가 빠르게 업데이트되는 안정적인 사이트.</p>
             </div>
-        </div>
-
-        <!-- 2위: 투디스크 -->
-        <div class="p-4 rounded-xl border border-gray-100 bg-white flex items-center space-x-3.5 shadow-xs">
             <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="w-16 h-16 flex-shrink-0 bg-blue-600 text-white text-xs font-bold rounded-xl flex items-center justify-center text-center shadow-sm">
                 바로가기
             </a>
+        </div>
+
+        <!-- 2위: 투디스크 -->
+        <div class="p-4 rounded-xl border border-gray-100 bg-white flex items-center justify-between space-x-3.5 shadow-xs">
             <div class="flex-1 min-w-0 space-y-1.5">
                 <div class="flex items-center space-x-2 flex-wrap">
                     <span class="font-bold text-gray-700 text-sm">2위</span>
@@ -119,131 +113,124 @@
                     <span class="font-bold text-gray-900 text-sm">투디스크</span>
                     <span class="bg-emerald-50 text-emerald-600 text-[10px] px-1.5 py-0.5 rounded font-bold">인기</span>
                     <span class="bg-rose-50 text-rose-600 text-[10px] px-1.5 py-0.5 rounded font-bold">노제휴</span>
-                    <span class="bg-sky-50 text-sky-600 text-[10px] px-1.5 py-0.5 rounded font-bold">쿠폰</span>
                 </div>
                 <p class="text-xs text-gray-600 leading-snug">오래된 업력만큼 고화질 자료와 마니아층 자료가 잘 정리되어 있음.</p>
             </div>
-        </div>
-
-        <!-- 3위: 밤파일 -->
-        <div class="p-4 rounded-xl border border-gray-100 bg-white flex items-center space-x-3.5 shadow-xs">
             <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="w-16 h-16 flex-shrink-0 bg-blue-600 text-white text-xs font-bold rounded-xl flex items-center justify-center text-center shadow-sm">
                 바로가기
             </a>
+        </div>
+
+        <!-- 3위: 밤파일 -->
+        <div class="p-4 rounded-xl border border-gray-100 bg-white flex items-center justify-between space-x-3.5 shadow-xs">
             <div class="flex-1 min-w-0 space-y-1.5">
                 <div class="flex items-center space-x-2 flex-wrap">
                     <span class="font-bold text-gray-700 text-sm">3위</span>
                     <span class="text-[10px] text-red-500 font-bold bg-red-50 px-1.5 py-0.5 rounded">▼ 1</span>
                     <img src="images/" alt="밤파일 로고" class="w-5 h-5 rounded object-cover border border-gray-100">
                     <span class="font-bold text-gray-900 text-sm">밤파일</span>
-                    <span class="bg-blue-50 text-blue-600 text-[10px] px-1.5 py-0.5 rounded font-bold">추천</span>
-                    <span class="bg-rose-50 text-rose-600 text-[10px] px-1.5 py-0.5 rounded font-bold">노제휴</span>
+                    <span class="bg-sky-50 text-sky-600 text-[10px] px-1.5 py-0.5 rounded font-bold">쿠폰</span>
                     <span class="bg-amber-50 text-amber-600 text-[10px] px-1.5 py-0.5 rounded font-bold">이벤트</span>
                 </div>
                 <p class="text-xs text-gray-600 leading-snug">속도 제한이 적고 쾌적한 다운로드 환경을 제공하는 P2P.</p>
             </div>
-        </div>
-
-        <!-- 4위: 꿀파일 -->
-        <div class="p-4 rounded-xl border border-gray-100 bg-white flex items-center space-x-3.5 shadow-xs">
             <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="w-16 h-16 flex-shrink-0 bg-blue-600 text-white text-xs font-bold rounded-xl flex items-center justify-center text-center shadow-sm">
                 바로가기
             </a>
+        </div>
+
+        <!-- 4위: 꿀파일 -->
+        <div class="p-4 rounded-xl border border-gray-100 bg-white flex items-center justify-between space-x-3.5 shadow-xs">
             <div class="flex-1 min-w-0 space-y-1.5">
                 <div class="flex items-center space-x-2 flex-wrap">
                     <span class="font-bold text-gray-700 text-sm">4위</span>
                     <span class="text-[10px] text-green-600 font-bold bg-green-50 px-1.5 py-0.5 rounded">▲ 3</span>
                     <img src="images/" alt="꿀파일 로고" class="w-5 h-5 rounded object-cover border border-gray-100">
                     <span class="font-bold text-gray-900 text-sm">꿀파일</span>
-                    <span class="bg-emerald-50 text-emerald-600 text-[10px] px-1.5 py-0.5 rounded font-bold">인기</span>
-                    <span class="bg-purple-50 text-purple-600 text-[10px] px-1.5 py-0.5 rounded font-bold">실시간업데이트</span>
-                    <span class="bg-sky-50 text-sky-600 text-[10px] px-1.5 py-0.5 rounded font-bold">쿠폰</span>
+                    <span class="bg-blue-50 text-blue-600 text-[10px] px-1.5 py-0.5 rounded font-bold">추천</span>
+                    <span class="bg-rose-50 text-rose-600 text-[10px] px-1.5 py-0.5 rounded font-bold">노제휴</span>
                 </div>
                 <p class="text-xs text-gray-600 leading-snug">다양한 이벤트와 실속 있는 포인트 혜택이 장점인 서비스.</p>
             </div>
-        </div>
-
-        <!-- 5위: 파일스타 -->
-        <div class="p-4 rounded-xl border border-gray-100 bg-white flex items-center space-x-3.5 shadow-xs">
             <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="w-16 h-16 flex-shrink-0 bg-blue-600 text-white text-xs font-bold rounded-xl flex items-center justify-center text-center shadow-sm">
                 바로가기
             </a>
+        </div>
+
+        <!-- 5위: 파일스타 -->
+        <div class="p-4 rounded-xl border border-gray-100 bg-white flex items-center justify-between space-x-3.5 shadow-xs">
             <div class="flex-1 min-w-0 space-y-1.5">
                 <div class="flex items-center space-x-2 flex-wrap">
                     <span class="font-bold text-gray-700 text-sm">5위</span>
                     <span class="text-[10px] text-gray-400 font-bold bg-gray-100 px-1.5 py-0.5 rounded">- 유지</span>
                     <img src="images/" alt="파일스타 로고" class="w-5 h-5 rounded object-cover border border-gray-100">
                     <span class="font-bold text-gray-900 text-sm">파일스타</span>
-                    <span class="bg-blue-50 text-blue-600 text-[10px] px-1.5 py-0.5 rounded font-bold">추천</span>
-                    <span class="bg-rose-50 text-rose-600 text-[10px] px-1.5 py-0.5 rounded font-bold">노제휴</span>
-                    <span class="bg-amber-50 text-amber-600 text-[10px] px-1.5 py-0.5 rounded font-bold">이벤트</span>
+                    <span class="bg-emerald-50 text-emerald-600 text-[10px] px-1.5 py-0.5 rounded font-bold">인기</span>
+                    <span class="bg-sky-50 text-sky-600 text-[10px] px-1.5 py-0.5 rounded font-bold">쿠폰</span>
                 </div>
                 <p class="text-xs text-gray-600 leading-snug">꾸준한 이벤트와 다운로드 속도 제한 없는 안정적인 서버 제공.</p>
             </div>
-        </div>
-
-        <!-- 6위: 지니파일 -->
-        <div class="p-4 rounded-xl border border-gray-100 bg-white flex items-center space-x-3.5 shadow-xs">
             <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="w-16 h-16 flex-shrink-0 bg-blue-600 text-white text-xs font-bold rounded-xl flex items-center justify-center text-center shadow-sm">
                 바로가기
             </a>
+        </div>
+
+        <!-- 6위: 지니파일 -->
+        <div class="p-4 rounded-xl border border-gray-100 bg-white flex items-center justify-between space-x-3.5 shadow-xs">
             <div class="flex-1 min-w-0 space-y-1.5">
                 <div class="flex items-center space-x-2 flex-wrap">
                     <span class="font-bold text-gray-700 text-sm">6위</span>
                     <span class="text-[10px] text-red-500 font-bold bg-red-50 px-1.5 py-0.5 rounded">▼ 2</span>
                     <img src="images/" alt="지니파일 로고" class="w-5 h-5 rounded object-cover border border-gray-100">
                     <span class="font-bold text-gray-900 text-sm">지니파일</span>
-                    <span class="bg-emerald-50 text-emerald-600 text-[10px] px-1.5 py-0.5 rounded font-bold">인기</span>
-                    <span class="bg-purple-50 text-purple-600 text-[10px] px-1.5 py-0.5 rounded font-bold">실시간업데이트</span>
-                    <span class="bg-sky-50 text-sky-600 text-[10px] px-1.5 py-0.5 rounded font-bold">쿠폰</span>
+                    <span class="bg-blue-50 text-blue-600 text-[10px] px-1.5 py-0.5 rounded font-bold">추천</span>
+                    <span class="bg-amber-50 text-amber-600 text-[10px] px-1.5 py-0.5 rounded font-bold">이벤트</span>
                 </div>
                 <p class="text-xs text-gray-600 leading-snug">편리한 검색 기능과 빠른 피드백으로 만족도가 높은 웹하드.</p>
             </div>
-        </div>
-
-        <!-- 7위: 파일보고 -->
-        <div class="p-4 rounded-xl border border-gray-100 bg-white flex items-center space-x-3.5 shadow-xs">
             <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="w-16 h-16 flex-shrink-0 bg-blue-600 text-white text-xs font-bold rounded-xl flex items-center justify-center text-center shadow-sm">
                 바로가기
             </a>
+        </div>
+
+        <!-- 7위: 파일보고 -->
+        <div class="p-4 rounded-xl border border-gray-100 bg-white flex items-center justify-between space-x-3.5 shadow-xs">
             <div class="flex-1 min-w-0 space-y-1.5">
                 <div class="flex items-center space-x-2 flex-wrap">
                     <span class="font-bold text-gray-700 text-sm">7위</span>
                     <span class="text-[10px] text-green-600 font-bold bg-green-50 px-1.5 py-0.5 rounded">▲ 1</span>
                     <img src="images/" alt="파일보고 로고" class="w-5 h-5 rounded object-cover border border-gray-100">
                     <span class="font-bold text-gray-900 text-sm">파일보고</span>
-                    <span class="bg-blue-50 text-blue-600 text-[10px] px-1.5 py-0.5 rounded font-bold">추천</span>
+                    <span class="bg-emerald-50 text-emerald-600 text-[10px] px-1.5 py-0.5 rounded font-bold">인기</span>
                     <span class="bg-rose-50 text-rose-600 text-[10px] px-1.5 py-0.5 rounded font-bold">노제휴</span>
-                    <span class="bg-sky-50 text-sky-600 text-[10px] px-1.5 py-0.5 rounded font-bold">쿠폰</span>
                 </div>
                 <p class="text-xs text-gray-600 leading-snug">다양한 장르의 제휴 콘텐츠 및 방송 프로그램 실시간 업로드.</p>
             </div>
-        </div>
-
-        <!-- 8위: 스마트파일 -->
-        <div class="p-4 rounded-xl border border-gray-100 bg-white flex items-center space-x-3.5 shadow-xs">
             <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="w-16 h-16 flex-shrink-0 bg-blue-600 text-white text-xs font-bold rounded-xl flex items-center justify-center text-center shadow-sm">
                 바로가기
             </a>
+        </div>
+
+        <!-- 8위: 스마트파일 -->
+        <div class="p-4 rounded-xl border border-gray-100 bg-white flex items-center justify-between space-x-3.5 shadow-xs">
             <div class="flex-1 min-w-0 space-y-1.5">
                 <div class="flex items-center space-x-2 flex-wrap">
                     <span class="font-bold text-gray-700 text-sm">8위</span>
                     <span class="text-[10px] text-red-500 font-bold bg-red-50 px-1.5 py-0.5 rounded">▼ 1</span>
                     <img src="images/" alt="스마트파일 로고" class="w-5 h-5 rounded object-cover border border-gray-100">
                     <span class="font-bold text-gray-900 text-sm">스마트파일</span>
-                    <span class="bg-emerald-50 text-emerald-600 text-[10px] px-1.5 py-0.5 rounded font-bold">인기</span>
-                    <span class="bg-purple-50 text-purple-600 text-[10px] px-1.5 py-0.5 rounded font-bold">실시간업데이트</span>
+                    <span class="bg-sky-50 text-sky-600 text-[10px] px-1.5 py-0.5 rounded font-bold">쿠폰</span>
                     <span class="bg-amber-50 text-amber-600 text-[10px] px-1.5 py-0.5 rounded font-bold">이벤트</span>
                 </div>
                 <p class="text-xs text-gray-600 leading-snug">모바일 호환성이 우수하고 인터페이스가 직관적인 플랫폼.</p>
             </div>
-        </div>
-
-        <!-- 9위: 파일이즈 -->
-        <div class="p-4 rounded-xl border border-gray-100 bg-white flex items-center space-x-3.5 shadow-xs">
             <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="w-16 h-16 flex-shrink-0 bg-blue-600 text-white text-xs font-bold rounded-xl flex items-center justify-center text-center shadow-sm">
                 바로가기
             </a>
+        </div>
+
+        <!-- 9위: 파일이즈 -->
+        <div class="p-4 rounded-xl border border-gray-100 bg-white flex items-center justify-between space-x-3.5 shadow-xs">
             <div class="flex-1 min-w-0 space-y-1.5">
                 <div class="flex items-center space-x-2 flex-wrap">
                     <span class="font-bold text-gray-700 text-sm">9위</span>
@@ -252,17 +239,16 @@
                     <span class="font-bold text-gray-900 text-sm">파일이즈</span>
                     <span class="bg-blue-50 text-blue-600 text-[10px] px-1.5 py-0.5 rounded font-bold">추천</span>
                     <span class="bg-rose-50 text-rose-600 text-[10px] px-1.5 py-0.5 rounded font-bold">노제휴</span>
-                    <span class="bg-sky-50 text-sky-600 text-[10px] px-1.5 py-0.5 rounded font-bold">쿠폰</span>
                 </div>
                 <p class="text-xs text-gray-600 leading-snug">안정적인 다운로드 속도와 폭넓은 마니아층 자료 보유.</p>
             </div>
-        </div>
-
-        <!-- 10위: 예스파일 -->
-        <div class="p-4 rounded-xl border border-gray-100 bg-white flex items-center space-x-3.5 shadow-xs">
             <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="w-16 h-16 flex-shrink-0 bg-blue-600 text-white text-xs font-bold rounded-xl flex items-center justify-center text-center shadow-sm">
                 바로가기
             </a>
+        </div>
+
+        <!-- 10위: 예스파일 -->
+        <div class="p-4 rounded-xl border border-gray-100 bg-white flex items-center justify-between space-x-3.5 shadow-xs">
             <div class="flex-1 min-w-0 space-y-1.5">
                 <div class="flex items-center space-x-2 flex-wrap">
                     <span class="font-bold text-gray-700 text-sm">10위</span>
@@ -270,15 +256,17 @@
                     <img src="images/" alt="예스파일 로고" class="w-5 h-5 rounded object-cover border border-gray-100">
                     <span class="font-bold text-gray-900 text-sm">예스파일</span>
                     <span class="bg-emerald-50 text-emerald-600 text-[10px] px-1.5 py-0.5 rounded font-bold">인기</span>
-                    <span class="bg-purple-50 text-purple-600 text-[10px] px-1.5 py-0.5 rounded font-bold">실시간업데이트</span>
-                    <span class="bg-amber-50 text-amber-600 text-[10px] px-1.5 py-0.5 rounded font-bold">이벤트</span>
+                    <span class="bg-sky-50 text-sky-600 text-[10px] px-1.5 py-0.5 rounded font-bold">쿠폰</span>
                 </div>
                 <p class="text-xs text-gray-600 leading-snug">다양한 보너스 포인트 혜택과 대중적인 인지도를 가진 웹하드.</p>
             </div>
+            <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="w-16 h-16 flex-shrink-0 bg-blue-600 text-white text-xs font-bold rounded-xl flex items-center justify-center text-center shadow-sm">
+                바로가기
+            </a>
         </div>
     </div>
 
-    <!-- PC 전용 테이블 뷰 (사이트명과 아이콘이 한 줄로 정렬) -->
+    <!-- PC 전용 테이블 뷰 (뱃지 2개 적용) -->
     <div class="hidden md:block overflow-x-auto">
         <table class="w-full text-left text-sm text-gray-600">
             <tbody class="divide-y divide-gray-100 text-xs">
@@ -295,7 +283,6 @@
                             <img src="images/" alt="파일몽 로고" class="w-6 h-6 rounded object-cover flex-shrink-0 border border-gray-100">
                             <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="font-bold text-gray-900 hover:text-blue-600">파일몽</a>
                             <span class="bg-blue-50 text-blue-600 text-[10px] px-1.5 py-0.5 rounded font-bold">추천</span>
-                            <span class="bg-purple-50 text-purple-600 text-[10px] px-1.5 py-0.5 rounded font-bold">실시간업데이트</span>
                             <span class="bg-amber-50 text-amber-600 text-[10px] px-1.5 py-0.5 rounded font-bold">이벤트</span>
                         </div>
                     </td>
@@ -322,7 +309,6 @@
                             <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="font-bold text-gray-900 hover:text-blue-600">투디스크</a>
                             <span class="bg-emerald-50 text-emerald-600 text-[10px] px-1.5 py-0.5 rounded font-bold">인기</span>
                             <span class="bg-rose-50 text-rose-600 text-[10px] px-1.5 py-0.5 rounded font-bold">노제휴</span>
-                            <span class="bg-sky-50 text-sky-600 text-[10px] px-1.5 py-0.5 rounded font-bold">쿠폰</span>
                         </div>
                     </td>
                     <td class="py-3 px-4 text-gray-600">오래된 업력만큼 고화질 자료와 마니아층 자료가 잘 정리되어 있음.</td>
@@ -346,8 +332,7 @@
                         <div class="flex items-center space-x-2 flex-wrap">
                             <img src="images/" alt="밤파일 로고" class="w-6 h-6 rounded object-cover flex-shrink-0 border border-gray-100">
                             <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="font-bold text-gray-900 hover:text-blue-600">밤파일</a>
-                            <span class="bg-blue-50 text-blue-600 text-[10px] px-1.5 py-0.5 rounded font-bold">추천</span>
-                            <span class="bg-rose-50 text-rose-600 text-[10px] px-1.5 py-0.5 rounded font-bold">노제휴</span>
+                            <span class="bg-sky-50 text-sky-600 text-[10px] px-1.5 py-0.5 rounded font-bold">쿠폰</span>
                             <span class="bg-amber-50 text-amber-600 text-[10px] px-1.5 py-0.5 rounded font-bold">이벤트</span>
                         </div>
                     </td>
@@ -372,9 +357,8 @@
                         <div class="flex items-center space-x-2 flex-wrap">
                             <img src="images/" alt="꿀파일 로고" class="w-6 h-6 rounded object-cover flex-shrink-0 border border-gray-100">
                             <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="font-bold text-gray-900 hover:text-blue-600">꿀파일</a>
-                            <span class="bg-emerald-50 text-emerald-600 text-[10px] px-1.5 py-0.5 rounded font-bold">인기</span>
-                            <span class="bg-purple-50 text-purple-600 text-[10px] px-1.5 py-0.5 rounded font-bold">실시간업데이트</span>
-                            <span class="bg-sky-50 text-sky-600 text-[10px] px-1.5 py-0.5 rounded font-bold">쿠폰</span>
+                            <span class="bg-blue-50 text-blue-600 text-[10px] px-1.5 py-0.5 rounded font-bold">추천</span>
+                            <span class="bg-rose-50 text-rose-600 text-[10px] px-1.5 py-0.5 rounded font-bold">노제휴</span>
                         </div>
                     </td>
                     <td class="py-3 px-4 text-gray-600">다양한 이벤트와 실속 있는 포인트 혜택이 장점인 서비스.</td>
@@ -398,9 +382,8 @@
                         <div class="flex items-center space-x-2 flex-wrap">
                             <img src="images/" alt="파일스타 로고" class="w-6 h-6 rounded object-cover flex-shrink-0 border border-gray-100">
                             <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="font-bold text-gray-900 hover:text-blue-600">파일스타</a>
-                            <span class="bg-blue-50 text-blue-600 text-[10px] px-1.5 py-0.5 rounded font-bold">추천</span>
-                            <span class="bg-rose-50 text-rose-600 text-[10px] px-1.5 py-0.5 rounded font-bold">노제휴</span>
-                            <span class="bg-amber-50 text-amber-600 text-[10px] px-1.5 py-0.5 rounded font-bold">이벤트</span>
+                            <span class="bg-emerald-50 text-emerald-600 text-[10px] px-1.5 py-0.5 rounded font-bold">인기</span>
+                            <span class="bg-sky-50 text-sky-600 text-[10px] px-1.5 py-0.5 rounded font-bold">쿠폰</span>
                         </div>
                     </td>
                     <td class="py-3 px-4 text-gray-600">꾸준한 이벤트와 다운로드 속도 제한 없는 안정적인 서버 제공.</td>
@@ -424,9 +407,8 @@
                         <div class="flex items-center space-x-2 flex-wrap">
                             <img src="images/" alt="지니파일 로고" class="w-6 h-6 rounded object-cover flex-shrink-0 border border-gray-100">
                             <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="font-bold text-gray-900 hover:text-blue-600">지니파일</a>
-                            <span class="bg-emerald-50 text-emerald-600 text-[10px] px-1.5 py-0.5 rounded font-bold">인기</span>
-                            <span class="bg-purple-50 text-purple-600 text-[10px] px-1.5 py-0.5 rounded font-bold">실시간업데이트</span>
-                            <span class="bg-sky-50 text-sky-600 text-[10px] px-1.5 py-0.5 rounded font-bold">쿠폰</span>
+                            <span class="bg-blue-50 text-blue-600 text-[10px] px-1.5 py-0.5 rounded font-bold">추천</span>
+                            <span class="bg-amber-50 text-amber-600 text-[10px] px-1.5 py-0.5 rounded font-bold">이벤트</span>
                         </div>
                     </td>
                     <td class="py-3 px-4 text-gray-600">편리한 검색 기능과 빠른 피드백으로 만족도가 높은 웹하드.</td>
@@ -450,9 +432,8 @@
                         <div class="flex items-center space-x-2 flex-wrap">
                             <img src="images/" alt="파일보고 로고" class="w-6 h-6 rounded object-cover flex-shrink-0 border border-gray-100">
                             <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="font-bold text-gray-900 hover:text-blue-600">파일보고</a>
-                            <span class="bg-blue-50 text-blue-600 text-[10px] px-1.5 py-0.5 rounded font-bold">추천</span>
+                            <span class="bg-emerald-50 text-emerald-600 text-[10px] px-1.5 py-0.5 rounded font-bold">인기</span>
                             <span class="bg-rose-50 text-rose-600 text-[10px] px-1.5 py-0.5 rounded font-bold">노제휴</span>
-                            <span class="bg-sky-50 text-sky-600 text-[10px] px-1.5 py-0.5 rounded font-bold">쿠폰</span>
                         </div>
                     </td>
                     <td class="py-3 px-4 text-gray-600">다양한 장르의 제휴 콘텐츠 및 방송 프로그램 실시간 업로드.</td>
@@ -476,8 +457,7 @@
                         <div class="flex items-center space-x-2 flex-wrap">
                             <img src="images/" alt="스마트파일 로고" class="w-6 h-6 rounded object-cover flex-shrink-0 border border-gray-100">
                             <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="font-bold text-gray-900 hover:text-blue-600">스마트파일</a>
-                            <span class="bg-emerald-50 text-emerald-600 text-[10px] px-1.5 py-0.5 rounded font-bold">인기</span>
-                            <span class="bg-purple-50 text-purple-600 text-[10px] px-1.5 py-0.5 rounded font-bold">실시간업데이트</span>
+                            <span class="bg-sky-50 text-sky-600 text-[10px] px-1.5 py-0.5 rounded font-bold">쿠폰</span>
                             <span class="bg-amber-50 text-amber-600 text-[10px] px-1.5 py-0.5 rounded font-bold">이벤트</span>
                         </div>
                     </td>
@@ -504,7 +484,6 @@
                             <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="font-bold text-gray-900 hover:text-blue-600">파일이즈</a>
                             <span class="bg-blue-50 text-blue-600 text-[10px] px-1.5 py-0.5 rounded font-bold">추천</span>
                             <span class="bg-rose-50 text-rose-600 text-[10px] px-1.5 py-0.5 rounded font-bold">노제휴</span>
-                            <span class="bg-sky-50 text-sky-600 text-[10px] px-1.5 py-0.5 rounded font-bold">쿠폰</span>
                         </div>
                     </td>
                     <td class="py-3 px-4 text-gray-600">안정적인 다운로드 속도와 폭넓은 마니아층 자료 보유.</td>
@@ -529,8 +508,7 @@
                             <img src="images/" alt="예스파일 로고" class="w-6 h-6 rounded object-cover flex-shrink-0 border border-gray-100">
                             <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="font-bold text-gray-900 hover:text-blue-600">예스파일</a>
                             <span class="bg-emerald-50 text-emerald-600 text-[10px] px-1.5 py-0.5 rounded font-bold">인기</span>
-                            <span class="bg-purple-50 text-purple-600 text-[10px] px-1.5 py-0.5 rounded font-bold">실시간업데이트</span>
-                            <span class="bg-amber-50 text-amber-600 text-[10px] px-1.5 py-0.5 rounded font-bold">이벤트</span>
+                            <span class="bg-sky-50 text-sky-600 text-[10px] px-1.5 py-0.5 rounded font-bold">쿠폰</span>
                         </div>
                     </td>
                     <td class="py-3 px-4 text-gray-600">다양한 보너스 포인트 혜택과 대중적인 인지도를 가진 웹하드.</td>
