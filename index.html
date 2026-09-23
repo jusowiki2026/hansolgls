@@ -9,7 +9,7 @@
     <meta name="description" content="2026년 최신 웹하드 및 P2P 실사용 인기 순위 TOP 10 비교. 다운로드 속도, 자료 보유량, 무료 포인트 혜택 및 안전한 사이트 고르는 꿀팁 제공.">
     <meta name="keywords" content="웹하드순위, P2P순위, 웹하드추천, P2P사이트, 한솔디스크, 싸다파일, 예스파일, 투디스크">
     <meta name="author" content="한솔디스크 가이드">
-    <link rel="canonical" href="https://jusowiki2026.github.io/hansolgls/index.html">
+    <link rel="canonical" href="http://www.hansolgls.kr">
 
     <!-- SEO 문서 작성일자 및 최신 수정일자 메타 태그 -->
     <meta name="date" content="2026-01-15">
@@ -391,13 +391,13 @@
         // 비동기로 컴포넌트 파일을 불러와 지정한 컨테이너에 삽입하는 함수
         async function loadComponents() {
             try {
-				const rankRes = await fetch('https://jusowiki2026.github.io/hansolgls/components/rank.html');
+				const rankRes = await fetch('http://www.hansolgls.kr/components/rank.html');
                 document.getElementById('rank-container').innerHTML = await rankRes.text();
 
-                const headerRes = await fetch('https://jusowiki2026.github.io/hansolgls/components/header.html');
+                const headerRes = await fetch('http://www.hansolgls.kr/components/header.html');
                 document.getElementById('header-container').innerHTML = await headerRes.text();
 
-                const footerRes = await fetch('https://jusowiki2026.github.io/hansolgls/components/footer.html');
+                const footerRes = await fetch('http://www.hansolgls.kr/components/footer.html');
                 document.getElementById('footer-container').innerHTML = await footerRes.text();
 
                 // 컴포넌트가 로드된 이후에 아이콘 생성 및 모바일 메뉴 토글 이벤트 재바인딩
