@@ -116,13 +116,13 @@
     <script>
         async function loadComponents() {
             try {
-                const headerRes = await fetch('http://www.hansolgls.kr/header.html');
+                const headerRes = await fetch('http://www.hansolgls.kr/components/header.html');
                 document.getElementById('header-container').innerHTML = await headerRes.text();
 
-                const rankRes = await fetch('http://www.hansolgls.kr/rank.html');
+                const rankRes = await fetch('http://www.hansolgls.kr/components/rank.html');
                 document.getElementById('rank-container').innerHTML = await rankRes.text();
 
-                const footerRes = await fetch('http://www.hansolgls.kr/footer.html');
+                const footerRes = await fetch('http://www.hansolgls.kr/components/footer.html');
                 document.getElementById('footer-container').innerHTML = await footerRes.text();
 
                 lucide.createIcons();
