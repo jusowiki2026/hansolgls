@@ -144,6 +144,18 @@
         }
 
         document.addEventListener('DOMContentLoaded', loadComponents);
+
+		        // 모바일 메뉴 토글 로직
+        function initMobileMenu() {
+            const menuBtn = document.getElementById('menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            if (menuBtn && mobileMenu) {
+                menuBtn.onclick = () => {
+                    mobileMenu.classList.toggle('hidden');
+                };
+            }
+        }
     </script>
 </body>
 </html>
